@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Search App</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d3d3d3; /* Changed to gray color */
+        }
+        .container {
+            text-align: center;
+        }
+        #search-button, #test-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #search-button:hover, #test-button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #loading {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+            font-size: 18px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="query-input" placeholder="Enter your search query" />
+        <button id="search-button">Search</button>
+        <button id="test-button">Test File Load</button>
+        <div id="loading">Loading...</div>
+        <div id="result"></div>
+    </div>
+    <script type="module">
+        import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
+        import { cos_sim } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
+
+        async function loadTextFile(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const text = await response.text();
+                console.log('Text file loaded successfully');
+                return text;
+            } catch (error) {
+                console.error('Error loading text file:', error);
+                return null;
+            }
+        }
+
+        function chunkText(text) {
+            const chunks = text.split('##').map(chunk => chunk.trim()).filter(chunk => chunk.length > 0);
+            console.log('Text chunked into', chunks.length, 'chunks');
+            return chunks;
+        }
+
+        async function getEmbeddings(extractor, text) {
+            try {
+                const output = await extractor([text], { pooling: 'mean', normalize: true });
+                console.log('Embeddings computed for text');
+                return output[0].data;
+            } catch (error) {
+                console.error('Error computing embeddings:', error);
+                return null;
+            }
+        }
+
+        async function findBestMatch(extractor, query, chunks) {
+            const queryEmbedding = await getEmbeddings(extractor, query);
+            let bestChunk = '';
+            let highestSimilarity = -1;
+
+            for (const chunk of chunks) {
+                const chunkEmbedding = await getEmbeddings(extractor, chunk);
+                const similarity = cos_sim(queryEmbedding, chunkEmbedding);
+                console.log('Similarity for chunk:', similarity);
+
+                if (similarity > highestSimilarity) {
+                    highestSimilarity = similarity;
+                    bestChunk = chunk;
+                }
+            }
+
+            console.log('Best chunk found with similarity:', highestSimilarity);
+            return bestChunk;
+        }
+
+        document.getElementById('search-button').addEventListener('click', async () => {
+            const query = document.getElementById('query-input').value;
+            if (!query) {
+                alert('Please enter a query.');
+                return;
+            }
+
+            console.log('Query received:', query);
+
+            document.getElementById('loading').style.display = 'block'; // Show loading text
+            document.getElementById('result').innerText = ''; // Clear previous results
+
+            // Load the text file and create chunks
+            const text = await loadTextFile('bio.txt');
+            if (!text) {
+                console.error('Failed to load text file.');
+                document.getElementById('loading').style.display = 'none'; // Hide loading text
+                return;
+            }
+
+            const chunks = chunkText(text);
+
+            // Create the feature-extraction pipeline
+            const extractor = await pipeline('feature-extraction', 'Xenova/gte-small');
+            console.log('Pipeline created');
+
+            // Find the chunk with the highest similarity
+            const bestChunk = await findBestMatch(extractor, query, chunks);
+
+            // Display the result
+            document.getElementById('result').innerText = `Best match: ${bestChunk}`;
+            document.getElementById('loading').style.display = 'none'; // Hide loading text
+        });
+
+        document.getElementById('test-button').addEventListener('click', async () => {
+            const text = await loadTextFile('bio.txt');
+            if (text) {
+                console.log('Loaded text content:', text.substring(0, 200)); // Log the first 200 characters
+            } else {
+                console.error('Failed to load bio.txt');
+            }
+        });
+    </script>
+</body>
+</html>

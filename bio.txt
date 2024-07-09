@@ -27,6 +27,7 @@ Tribhuvan University, Nepal
 - C/C++
 - Python
 - Numpy/Tensorflow
+- Langchain, Langgraph
 
 
 ## Publications
@@ -43,11 +44,12 @@ Tribhuvan University, Nepal
 - [Lab Report on Propositional Logic](/LAB/Lab%20Report%20on%20Propositional%20Logic.pdf)
 - [Familiarization with basic CT/DT functions](/LAB/Familiarization%20with%20basic%20CT⁄DT%20functions.pdf)
 
-see [Publications](/posts).
 
 
 ## Educational/Work history
 
+- 2024/05/01 Associate AI engineer @ Amnil Technology Pvt Ltd
+- 2022 - 2023 Chief Data Officier @ Ed-Acadia Pvt Ltd
 - 2022/06/01(End on 2023/06/01)~ Software Coordinator of [PDSC](pdscnepal.org)
 - 2019/08/01~ Pulchowk campus, Computer Engineering.
 - 2017/04/01~ Kathmandu Bernhardt School, +2 level.
@@ -93,6 +95,6 @@ behaviour of laten space and image manupulation. Tech: Python, Numpy, Tensorflow
 and present it in minimal enviroment constraint. Tech: Github Workflow, Automation in Scraping , HTML, CSS, WebSockets,
 JavaScript, RSS, XML ( Since 2020)
 
-## Find my CV > [HERE](/resume.pdf).
+## Find my CV > [HERE](sumityadav.com.np/resume.pdf).
 > Excuse me, but this, this is just a piece of paper, If I'm going to be worthy of this institution, I will show you in action. -->Tom and Jerry(Kayla)
 

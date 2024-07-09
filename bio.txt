@@ -95,6 +95,4 @@ behaviour of laten space and image manupulation. Tech: Python, Numpy, Tensorflow
 and present it in minimal enviroment constraint. Tech: Github Workflow, Automation in Scraping , HTML, CSS, WebSockets,
 JavaScript, RSS, XML ( Since 2020)
 
-## Find my CV > [HERE](sumityadav.com.np/resume.pdf).
-> Excuse me, but this, this is just a piece of paper, If I'm going to be worthy of this institution, I will show you in action. -->Tom and Jerry(Kayla)
-
+## Find my CV > [HERE](sumityadav.com.np/resume.pdf)

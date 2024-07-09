@@ -1,98 +1,79 @@
-##  Introduction
+## Introduction
 
-Hi i am Sumit Yadav.
-My journey in computer engineering has been fueled by a deep fascination with data manipulation and its potential to revolutionize various fields. As a highly motivated student, I've actively sought out opportunities to hone my skills and translate theoretical knowledge into real-world applications.
-I'm not just a technically skilled individual with impressive academic credentials.  I'm an innovator driven by a relentless passion to leverage artificial intelligence and machine learning to solve real-world problems.  My diverse skillset, coupled with my proven track record of success, makes me a valuable asset to any team.  However,  I believe that actions speak louder than words.  I'm eager to showcase my capabilities and contribute to groundbreaking advancements in the field of computer engineering.
-
+Hi, I am Sumit Yadav. My journey in computer engineering has been fueled by a deep fascination with data manipulation and its potential to revolutionize various fields. As a highly motivated student, I have actively sought opportunities to hone my skills and translate theoretical knowledge into real-world applications. I am not just a technically skilled individual with impressive academic credentials; I am an innovator driven by a relentless passion to leverage artificial intelligence and machine learning to solve real-world problems. My diverse skill set, coupled with my proven track record of success, makes me a valuable asset to any team. However, I believe that actions speak louder than words. I am eager to showcase my capabilities and contribute to groundbreaking advancements in the field of computer engineering.
 
 ## Affiliation
 
-Associate AI engineer
-Amnil Technology Pvt Ltd
-
-Computer Engineering Student.
-Dept. Electronics and Computer Engineering,.
-Pulchowk Campus
-Tribhuvan University, Nepal
+I am currently an Associate AI Engineer at Amnil Technology Pvt Ltd. Additionally, I am a Computer Engineering student in the Department of Electronics and Computer Engineering at Pulchowk Campus, Tribhuvan University, Nepal.
 
 ## Interests
 
-- Data Manupulation (Machine Learning)
-- Project Management
-- Software Engineering (C++, Python)
-- Photography
+I have a keen interest in data manipulation (machine learning), project management, software engineering (C++, Python), and photography.
 
 ## Technical Skills
 
-- C/C++
-- Python
-- Numpy/Tensorflow
-- Langchain, Langgraph
-
+My technical skills include proficiency in C/C++, Python, Numpy/Tensorflow, Langchain, and Langgraph.
 
 ## Publications
 
-- [SUPPORT VECTORS ARE A BETTER WAY OF TEXT CLASSIFICATION FOR IMBALANCED DATA](https://www.researchgate.net/publication/371514138_SUPPORT_VECTORS_ARE_A_BETTER_WAY_OF_TEXT_CLASSIFICATION_FOR_IMBALANCED_DATA)
+I have published two significant papers:
 
-- [MACHINE LEARNING ANALYSIS OF TIRHUTA LIPI](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi)
+- [Support Vectors Are a Better Way of Text Classification for Imbalanced Data](https://www.researchgate.net/publication/371514138_SUPPORT_VECTORS_ARE_A_BETTER_WAY_OF_TEXT_CLASSIFICATION_FOR_IMBALANCED_DATA)
+- [Machine Learning Analysis of Tirhuta Lipi](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi)
 
 ## Lab Files
+
+Here are some of my lab reports:
+
 - [Introduction to UNIX Commands and Shell Programming](/LAB/Introduction%20to%20UNIX%20Commands%20and%20Shell%20Programming.pdf)
-- [Lab Report on A Gentics Algorithm](/LAB/Lab%20Report%20on%20A%20Gentics%20Algorithm.pdf)
+- [Lab Report on A Genetic Algorithm](/LAB/Lab%20Report%20on%20A%20Genetic%20Algorithm.pdf)
 - [Lab Report on An Artificial Neural Network](/LAB/Lab%20Report%20on%20An%20Artificial%20Neural%20Network.pdf)
 - [Lab Report on Constraint Programming](/LAB/Lab%20Report%20on%20Constraint%20Programming.pdf)
 - [Lab Report on Propositional Logic](/LAB/Lab%20Report%20on%20Propositional%20Logic.pdf)
 - [Familiarization with basic CT/DT functions](/LAB/Familiarization%20with%20basic%20CT⁄DT%20functions.pdf)
 
+## Educational/Work History
 
-
-## Educational/Work history
-
-- 2024/05/01 Associate AI engineer @ Amnil Technology Pvt Ltd
-- 2022 - 2023 Chief Data Officier @ Ed-Acadia Pvt Ltd
-- 2022/06/01(End on 2023/06/01)~ Software Coordinator of [PDSC](pdscnepal.org)
-- 2019/08/01~ Pulchowk campus, Computer Engineering.
-- 2017/04/01~ Kathmandu Bernhardt School, +2 level.
-- 2007/03/01~ School Level.
+- 2024/05/01 - Present: Associate AI Engineer at Amnil Technology Pvt Ltd
+- 2022 - 2023: Chief Data Officer at Ed-Acadia Pvt Ltd
+- 2022/06/01 - 2023/06/01: Software Coordinator at [PDSC](pdscnepal.org)
+- 2019/08/01 - Present: Computer Engineering Student at Pulchowk Campus
+- 2017/04/01 - 2019/04/01: Student at Kathmandu Bernhardt School
+- 2007/03/01 - 2017/03/01: School Level Education
 
 ## Courses
 
-- GAN Specialization(Coursera).
-- Deep Learning Specialization(Coursera).
-- Deep Learning with Tensorflow (EDX)
-- Machine Learning(Coursera).
+I have completed several courses to enhance my knowledge and skills:
+
+- GAN Specialization (Coursera)
+- Deep Learning Specialization (Coursera)
+- Deep Learning with TensorFlow (EDX)
+- Machine Learning (Coursera)
 
 ## Honors and Awards
 
-- [Winner of GritFeat AI Hackathon 2023](https://locus.com.np/verify?id=36b03d92-3c03-4591-ac60-779f6aec27e5), Locus - Feb, 2022,([SWIFT](https://www.linkedin.com/feed/update/urn:li:activity:7025771930481803264?utm_source=share&utm_medium=member_desktop)’ is a wearable devices with hardware and AI
-models that detect falls in elderly people with 0.7986 accuracy, resulting in immediate emergency alerts to
-contacts.)
-- Second RunnerUP of Dataverse, Locus - Jan, 2022,[Dataverse Solution](https://github.com/rockerritesh/Datarush-2023-DataVerse-) (NLP pased problem to classify abstract.)
-- Winner of Best AI Project of Deltathon, DELTA 3.0 - Jan, 2022,[Nepali Harvest](https://github.com/adhikariraju38/Nepali_Harvest) (Designed a portal to help farmers
-that can predicting diseases, identifying optimal harvest times, and aiding with crop health assessment.)
-- [Winner of Image Challenge](https://www.linkedin.com/feed/update/urn:li:activity:6967119637503238144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A6967119637503238144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B4K0ROXY%2FTDCmHHIuQn%2FISg%3D%3D) - AI Competition - Kathmandu University Computer Club - IT Meet 2022.
-- Second Place - [Docsumo DataRush, an AI and Data Science Competition 2022.](https://www.facebook.com/locus.data.rush/photos/pcb.117726577459745/117726310793105/)
-- Advance Level Winner- [Capture The Flag 2022](https://www.facebook.com/locus.ioe/photos/a.202948823208958/1667487916755034/)
-- AI and Robotics [Member](/rockerriteshrancard.jpg) - RAN.
-- Joint Secretary - NTBNS.
+I have received several honors and awards, including:
 
-## Project
+- [Winner of GritFeat AI Hackathon 2023](https://locus.com.np/verify?id=36b03d92-3c03-4591-ac60-779f6aec27e5), Locus - Feb, 2022
+- Second Runner-Up of Dataverse, Locus - Jan, 2022
+- Winner of Best AI Project of Deltathon, DELTA 3.0 - Jan, 2022
+- [Winner of Image Challenge](https://www.linkedin.com/feed/update/urn:li:activity:6967119637503238144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A6967119637503238144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29) - AI Competition - Kathmandu University Computer Club - IT Meet 2022
+- Second Place - [Docsumo DataRush, an AI and Data Science Competition 2022](https://www.facebook.com/locus.data.rush/photos/pcb.117726577459745/117726310793105/)
+- Advance Level Winner - [Capture The Flag 2022](https://www.facebook.com/locus.ioe/photos/a.202948823208958/1667487916755034/)
+- AI and Robotics [Member](/rockerriteshrancard.jpg) - RAN
+- Joint Secretary - NTBNS
 
-- Minor Project: [Maithili_Lipi](https://github.com/rockerritesh/maithili_lipi_AI_proj) Used to classify Maithili_Lipi(Tirhuta) with high accurac, its begining of OCR for low resources language.
--  [IRB](https://github.com/jarp0l/IRB-Robo-Arm) (Image Recognition Based) Robotics Arm (Image Processing, Signal Processing, Actuator Control):
-Research oriented, open source, Project under UN’s SDG3 - Good Health & Well-Being. Tech: Python, Arduino Programming,
-Arduino Toolkit, TensorFlow (May ’2020)
-- Microsoft Rice Disease Classification Challenge (Computer Vision): AI model to classify Rice plant disease & fastly
-and efficently. Powered by [ZINDI](https://zindi.africa/competitions/microsoft-rice-disease-classification-challenge), LB score 0.077 and LB Postion 40. Tech: Python, Transformer(timm), Pytorch, Boosting
-Algorithm & Transfer learning. (August ’2022)
-- Nepali Language ([Devanagari Classifier](https://github.com/rockerritesh/Nepali_devanagari_Classifier), [Nepali Sentiment Classifier](https://github.com/rockerritesh/NepaliSentiment), [Nepali OCR](https://github.com/rockerritesh/easyOCR_Nepali) [Nepali Poem Generator](https://github.com/rockerritesh/nepali_poem_datasets)): In
-devanagari letter classifier trained vgg16 model(acc. 0.94), To test accuracy of Nepali Language Transformer, i use nepali
-sentiment analysis score after fine tunning, and a simple OCR based on API of easyOCR Tech: Keras, Transformer, Pytorch,
-TF-IDF, NLTK (Past 2 Years)
-- [Unsupervised Model](https://github.com/rockerritesh/Unsupervised) (VAE, GAN, C- GAN, AC-GAN, DC-GAN): Research oriented, Project for learning the
-behaviour of laten space and image manupulation. Tech: Python, Numpy, Tensorflow (Sep, 2021)
-- [NEPSE Simple](https://github.com/rockerritesh/nepsesimple)(Web Development, Web Scraping, [Telegram Bot](https://t.me/nepsebot)): Created from scratch a nepal stock market data
-and present it in minimal enviroment constraint. Tech: Github Workflow, Automation in Scraping , HTML, CSS, WebSockets,
-JavaScript, RSS, XML ( Since 2020)
+## Projects
 
-## Find my CV > [HERE](sumityadav.com.np/resume.pdf)
+I have worked on several projects, including:
+
+- [Maithili_Lipi](https://github.com/rockerritesh/maithili_lipi_AI_proj): Classified Maithili_Lipi (Tirhuta) with high accuracy, beginning OCR for low-resource languages.
+- [IRB](https://github.com/jarp0l/IRB-Robo-Arm): (Image Recognition Based) Robotics Arm. Research-oriented, open-source project under UN’s SDG3 - Good Health & Well-Being.
+- Microsoft Rice Disease Classification Challenge: AI model to classify rice plant disease efficiently. Powered by [ZINDI](https://zindi.africa/competitions/microsoft-rice-disease-classification-challenge). 
+- Nepali Language Projects: [Devanagari Classifier](https://github.com/rockerritesh/Nepali_devanagari_Classifier), [Nepali Sentiment Classifier](https://github.com/rockerritesh/NepaliSentiment), [Nepali OCR](https://github.com/rockerritesh/easyOCR_Nepali), [Nepali Poem Generator](https://github.com/rockerritesh/nepali_poem_datasets).
+- [Unsupervised Model](https://github.com/rockerritesh/Unsupervised): Research-oriented project for learning the behavior of latent space and image manipulation.
+- [NEPSE Simple](https://github.com/rockerritesh/nepsesimple): Created a Nepal stock market data platform, presented in a minimal environment.
+
+## Find My CV
+
+You can find my CV [here](sumityadav.com.np/resume.pdf).

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit Yadav</title>
-    <h1> Ask About Sumit Yadav </h1>
+    <h1>Ask About Sumit Yadav</h1>
     <style>
         body, html {
             height: 100%;
@@ -36,13 +36,13 @@
             padding: 20px;
             background-color: #fff;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(88, 238, 1, 0.5);
         }
         #loading {
             display: none; /* Initially hidden */
             margin-top: 20px;
             font-size: 18px;
-            color: #000;
+            color: #dd0611;
         }
     </style>
 </head>
@@ -110,7 +110,7 @@
             return bestChunk;
         }
 
-        document.getElementById('search-button').addEventListener('click', async () => {
+        async function handleSearch() {
             const query = document.getElementById('query-input').value;
             if (!query) {
                 alert('Please enter a query.');
@@ -142,7 +142,9 @@
             // Display the result
             document.getElementById('result').innerText = `Response: ${bestChunk}`;
             document.getElementById('loading').style.display = 'none'; // Hide loading text
-        });
+        }
+
+        document.getElementById('search-button').addEventListener('click', handleSearch);
 
         document.getElementById('test-button').addEventListener('click', async () => {
             const text = await loadTextFile('bio.txt');
@@ -150,6 +152,12 @@
                 console.log('Loaded text content:', text.substring(0, 200)); // Log the first 200 characters
             } else {
                 console.error('Failed to load bio.txt');
+            }
+        });
+
+        document.getElementById('query-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                handleSearch();
             }
         });
     </script>

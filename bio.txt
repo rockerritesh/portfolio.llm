@@ -1,10 +1,13 @@
 ## Introduction
 
-Hi, I am Sumit Yadav. My journey in computer engineering has been fueled by a deep fascination with data manipulation and its potential to revolutionize various fields. As a highly motivated student, I have actively sought opportunities to hone my skills and translate theoretical knowledge into real-world applications. I am not just a technically skilled individual with impressive academic credentials; I am an innovator driven by a relentless passion to leverage artificial intelligence and machine learning to solve real-world problems. My diverse skill set, coupled with my proven track record of success, makes me a valuable asset to any team. However, I believe that actions speak louder than words. I am eager to showcase my capabilities and contribute to groundbreaking advancements in the field of computer engineering.
+Hi hello, I am Sumit Yadav.
+
+## My Goal
+Magic>Music<Maths
 
 ## Affiliation
 
-I am currently an Associate AI Engineer at Amnil Technology Pvt Ltd. Additionally, I am a Computer Engineering student in the Department of Electronics and Computer Engineering at Pulchowk Campus, Tribhuvan University, Nepal.
+I am currently an AI Engineer at Amnil Technology Pvt Ltd. Additionally, I was a Computer Engineering student in the Department of Electronics and Computer Engineering at Pulchowk Campus, Tribhuvan University, Nepal.
 
 ## Interests
 
@@ -21,20 +24,10 @@ I have published two significant papers:
 - [Support Vectors Are a Better Way of Text Classification for Imbalanced Data](https://www.researchgate.net/publication/371514138_SUPPORT_VECTORS_ARE_A_BETTER_WAY_OF_TEXT_CLASSIFICATION_FOR_IMBALANCED_DATA)
 - [Machine Learning Analysis of Tirhuta Lipi](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi)
 
-## Lab Files
-
-Here are some of my lab reports:
-
-- [Introduction to UNIX Commands and Shell Programming](/LAB/Introduction%20to%20UNIX%20Commands%20and%20Shell%20Programming.pdf)
-- [Lab Report on A Genetic Algorithm](/LAB/Lab%20Report%20on%20A%20Genetic%20Algorithm.pdf)
-- [Lab Report on An Artificial Neural Network](/LAB/Lab%20Report%20on%20An%20Artificial%20Neural%20Network.pdf)
-- [Lab Report on Constraint Programming](/LAB/Lab%20Report%20on%20Constraint%20Programming.pdf)
-- [Lab Report on Propositional Logic](/LAB/Lab%20Report%20on%20Propositional%20Logic.pdf)
-- [Familiarization with basic CT/DT functions](/LAB/Familiarization%20with%20basic%20CT⁄DT%20functions.pdf)
 
 ## Educational/Work History
 
-- 2024/05/01 - Present: Associate AI Engineer at Amnil Technology Pvt Ltd
+- 2024/05/01 - Present: AI Engineer at Amnil Technology Pvt Ltd
 - 2022 - 2023: Chief Data Officer at Ed-Acadia Pvt Ltd
 - 2022/06/01 - 2023/06/01: Software Coordinator at [PDSC](pdscnepal.org)
 - 2019/08/01 - Present: Computer Engineering Student at Pulchowk Campus
@@ -63,7 +56,7 @@ I have received several honors and awards, including:
 - AI and Robotics [Member](/rockerriteshrancard.jpg) - RAN
 - Joint Secretary - NTBNS
 
-## Projects
+## My Projects are:-
 
 I have worked on several projects, including:
 
@@ -76,4 +69,4 @@ I have worked on several projects, including:
 
 ## Find My CV
 
-You can find my CV [here](sumityadav.com.np/resume.pdf).
+You can find my CV [here](https://sumityadav.com.np/resume.pdf).

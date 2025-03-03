@@ -1,9 +1,10 @@
 ## Introduction
 
-Hi hello, I am Sumit Yadav.
+Hi, hello! I am Sumit Yadav, an AI Engineer specializing in Natural Language Processing (NLP), AI optimization, and Generative AI. I have a deep passion for building intelligent systems and have worked extensively on production-grade AI solutions, prompt engineering, and LLM evaluation.
 
 ## My Goal
-Magic>Music<Maths
+
+Magic > Music < Maths
 
 ## Affiliation
 
@@ -11,62 +12,99 @@ I am currently an AI Engineer at Amnil Technology Pvt Ltd. Additionally, I was a
 
 ## Interests
 
-I have a keen interest in data manipulation (machine learning), project management, software engineering (C++, Python), and photography.
+I have a keen interest in:
+- Data manipulation and machine learning
+- Project management
+- Software engineering (C++, Python)
+- Photography
+- Robotics and AI-driven automation
 
 ## Technical Skills
 
-My technical skills include proficiency in C/C++, Python, Numpy/Tensorflow, Langchain, and Langgraph.
+- **Programming Languages:** Python, C, C++, Bash
+- **Frameworks & Libraries:** TensorFlow, PyTorch, LangChain, LlamaIndex, LangGraph
+- **Tools & Technologies:** CI/CD, Git, Streamlit, Django, MySQL, GraphQL
+- **Soft Skills:** Leadership, Event Management, Writing, Public Speaking, Time Management
 
 ## Publications
 
-I have published two significant papers:
+I have authored several peer-reviewed papers:
 
 - [Support Vectors Are a Better Way of Text Classification for Imbalanced Data](https://www.researchgate.net/publication/371514138_SUPPORT_VECTORS_ARE_A_BETTER_WAY_OF_TEXT_CLASSIFICATION_FOR_IMBALANCED_DATA)
 - [Machine Learning Analysis of Tirhuta Lipi](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi)
+- *Revolutionizing Currency Security: A YOLOv8-Based Approach for Automated Detection of Counterfeit Nepali Banknotes* (Achieved high accuracy in detecting counterfeit currency using deep learning)
 
+## Work Experience
 
-## Educational/Work History
+### Amnil Technology Pvt. Ltd (May 2024 - Present)  
+**AI Engineer**
+- Architecting multi-agent RAG systems with secure retrieval mechanisms.
+- Developing advanced chatbots with post-conversation analysis and SQL/Excel Agents.
+- Hosting and optimizing LLMs (e.g., LLaMA 3.3 3B) for efficient API inference.
 
-- 2024/05/01 - Present: AI Engineer at Amnil Technology Pvt Ltd
-- 2022 - 2023: Chief Data Officer at Ed-Acadia Pvt Ltd
-- 2022/06/01 - 2023/06/01: Software Coordinator at [PDSC](pdscnepal.org)
-- 2019/08/01 - Present: Computer Engineering Student at Pulchowk Campus
-- 2017/04/01 - 2019/04/01: Student at Kathmandu Bernhardt School
-- 2007/03/01 - 2017/03/01: School Level Education
+### Ed-Acadia (May 2022 - 2023)  
+**Chief Data Officer**
+- Led AI/ML projects focusing on low-resource language document AI systems.
+- Supervised research in data science and AI applications.
 
-## Courses
+### PDSC (Plan Design Solve Create) (May 2022 - 2023)  
+**Software Coordinator**
+- Managed AI and data science research projects.
+- Led technical documentation and implementation strategies.
 
-I have completed several courses to enhance my knowledge and skills:
+### DeepLearning.AI (Aug 2021 - Present)  
+**GAN Specialization Mentor**
+- Guided students in understanding generative adversarial networks (GANs).
 
-- GAN Specialization (Coursera)
+### Robotics Association of Nepal (2021 - Present)  
+**AI & Robotics Member**
+- Developed computer vision projects for Raspberry Pi-based robotics applications.
+
+## Projects
+
+- **Retrieval Augmented Generation System (RAG):** Built a secure RAG system for enhanced document interaction.
+- **Nepali Chat with Doc:** Implemented a chatbot supporting Devanagari and Preeti font text with NLP-based analysis.
+- **Maithili Text Classification:** Developed a BERT-based classifier achieving 87% accuracy on Maithili texts.
+- **Image Recognition-Based Robotics Arm:** Researched signal processing and AI-driven actuator control for robotic applications.
+- **NEPSE Simple:** Designed a stock market analysis tool for Nepal Stock Exchange using web scraping and automation.
+- **Unsupervised Learning Models:** Explored Variational Autoencoders (VAE), GAN, C-GAN, and DC-GAN for generative modeling.
+
+## Education
+
+- **Bachelor of Computer Engineering**  
+Pulchowk Campus, Tribhuvan University, Nepal (2019 - 2024)  
+Courses: SDNs, FinTech, Operating Systems, Big Data, AI, Networking, Databases
+
+- **Kathmandu Bernhardt School** (2017 - 2019)
+- **School Level Education (2007 - 2017)**
+
+## Certifications & Courses
+
 - Deep Learning Specialization (Coursera)
+- GAN Specialization (Coursera)
+- Generative AI with LLM (Google Cloud)
 - Deep Learning with TensorFlow (EDX)
 - Machine Learning (Coursera)
 
 ## Honors and Awards
 
-I have received several honors and awards, including:
+- **Winner of GritFeat AI Hackathon 2023** - Developed a wearable AI system detecting falls in elderly individuals (0.7986 accuracy).
+- **Runner-up of Dataverse, Locus 2023** - NLP-based abstract classification solution.
+- **Winner of Best AI Project at Deltathon 2022** - AI-driven agricultural assistance system for disease prediction.
+- **Winner of Image Challenge, IT-Meet 2022** - Developed an AI model to classify ballot paper images.
+- **Winner of Capture The Flag, LogPoint 2021** - Reverse-engineered a binary file for security analysis.
 
-- [Winner of GritFeat AI Hackathon 2023](https://locus.com.np/verify?id=36b03d92-3c03-4591-ac60-779f6aec27e5), Locus - Feb, 2022
-- Second Runner-Up of Dataverse, Locus - Jan, 2022
-- Winner of Best AI Project of Deltathon, DELTA 3.0 - Jan, 2022
-- [Winner of Image Challenge](https://www.linkedin.com/feed/update/urn:li:activity:6967119637503238144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A6967119637503238144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29) - AI Competition - Kathmandu University Computer Club - IT Meet 2022
-- Second Place - [Docsumo DataRush, an AI and Data Science Competition 2022](https://www.facebook.com/locus.data.rush/photos/pcb.117726577459745/117726310793105/)
-- Advance Level Winner - [Capture The Flag 2022](https://www.facebook.com/locus.ioe/photos/a.202948823208958/1667487916755034/)
-- AI and Robotics [Member](/rockerriteshrancard.jpg) - RAN
-- Joint Secretary - NTBNS
+## Social Contributions
 
-## My Projects are:-
+- **Team of NPL Coders Global** - Organized a national-level data science coding competition on Kaggle and HackerRank.
+- **Joint Secretary, NTBNS Student Clubs, IOE Pulchowk** - Conducted technical training sessions and led Nepal’s largest Saraswati Puja event.
+- **Tutor at Children in Technology, WorldLink Nepal** - Educated students on internet safety and cybersecurity.
 
-I have worked on several projects, including:
+## Contact
 
-- [Maithili_Lipi](https://github.com/rockerritesh/maithili_lipi_AI_proj): Classified Maithili_Lipi (Tirhuta) with high accuracy, beginning OCR for low-resource languages.
-- [IRB](https://github.com/jarp0l/IRB-Robo-Arm): (Image Recognition Based) Robotics Arm. Research-oriented, open-source project under UN’s SDG3 - Good Health & Well-Being.
-- Microsoft Rice Disease Classification Challenge: AI model to classify rice plant disease efficiently. Powered by [ZINDI](https://zindi.africa/competitions/microsoft-rice-disease-classification-challenge). 
-- Nepali Language Projects: [Devanagari Classifier](https://github.com/rockerritesh/Nepali_devanagari_Classifier), [Nepali Sentiment Classifier](https://github.com/rockerritesh/NepaliSentiment), [Nepali OCR](https://github.com/rockerritesh/easyOCR_Nepali), [Nepali Poem Generator](https://github.com/rockerritesh/nepali_poem_datasets).
-- [Unsupervised Model](https://github.com/rockerritesh/Unsupervised): Research-oriented project for learning the behavior of latent space and image manipulation.
-- [NEPSE Simple](https://github.com/rockerritesh/nepsesimple): Created a Nepal stock market data platform, presented in a minimal environment.
+- **Email:** rockerritesh4@gmail.com
+- **Portfolio:** [sumityadav.com.np](https://sumityadav.com.np)
+- **GitHub:** [github.com/rockerritesh](https://github.com/rockerritesh)
+- **LinkedIn:** [linkedin.com/in/rockerritesh](https://linkedin.com/in/rockerritesh)
+- **Mobile:** +977-9819856148
 
-## Find My CV
-
-You can find my CV [here](https://sumityadav.com.np/resume.pdf).

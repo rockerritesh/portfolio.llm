@@ -1,110 +1,126 @@
-## Introduction
+## Introduction: **Sumit Yadav**
 
-Hi, hello! I am Sumit Yadav, an AI Engineer specializing in Natural Language Processing (NLP), AI optimization, and Generative AI. I have a deep passion for building intelligent systems and have worked extensively on production-grade AI solutions, prompt engineering, and LLM evaluation.
+**Email:** rockerritesh4@gmail.com  
+**Portfolio:** [sumityadav.com.np](https://sumityadav.com.np)  
+**Mobile:** +977-9819856148  
+**GitHub:** [github.com/rockerritesh](https://github.com/rockerritesh)  
+**LinkedIn:** [linkedin.com/in/rockerritesh](https://linkedin.com/in/rockerritesh)  
 
-## My Goal
+---
 
-Magic > Music < Maths
+## **Summary**
 
-## Affiliation
+AI Engineer specializing in Natural Language Processing (NLP) and AI optimization, with 5+ years of experience building production-grade AI systems. Currently architecting:
 
-I am currently an AI Engineer at Amnil Technology Pvt Ltd. Additionally, I was a Computer Engineering student in the Department of Electronics and Computer Engineering at Pulchowk Campus, Tribhuvan University, Nepal.
+- Multi-agent RAG systems with secure guardrails for information retrieval  
+- Context-aware chatbots with post-conversation analysis and agent-based workflows  
+- LLM evaluation frameworks for performance and reliability testing  
+- MCP Server for fast integration of intelligent agents  
 
-## Interests
+Proven track record in developing low-resource NLP systems (e.g., Maithili text classification with 87% accuracy), multilingual document analysis, and publication of impactful research on machine learning and security.
 
-I have a keen interest in:
-- Data manipulation and machine learning
-- Project management
-- Software engineering (C++, Python)
-- Photography
-- Robotics and AI-driven automation
+---
 
-## Technical Skills
+## **Core Competencies**
 
-- **Programming Languages:** Python, C, C++, Bash
-- **Frameworks & Libraries:** TensorFlow, PyTorch, LangChain, LlamaIndex, LangGraph
-- **Tools & Technologies:** CI/CD, Git, Streamlit, Django, MySQL, GraphQL
-- **Soft Skills:** Leadership, Event Management, Writing, Public Speaking, Time Management
+- AI Prompt Design  
+- LLM Fine-tuning  
+- Security Document Analysis  
+- Technical Documentation  
+- Cross-functional Collaboration  
+- GRC Data Annotation  
 
-## Publications
+---
 
-I have authored several peer-reviewed papers:
+## **Technical Skills**
 
-- [Support Vectors Are a Better Way of Text Classification for Imbalanced Data](https://www.researchgate.net/publication/371514138_SUPPORT_VECTORS_ARE_A_BETTER_WAY_OF_TEXT_CLASSIFICATION_FOR_IMBALANCED_DATA)
-- [Machine Learning Analysis of Tirhuta Lipi](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi)
-- *Revolutionizing Currency Security: A YOLOv8-Based Approach for Automated Detection of Counterfeit Nepali Banknotes* (Achieved high accuracy in detecting counterfeit currency using deep learning)
+- **Languages:** Python, C, C++, Bash  
+- **Frameworks & Libraries:** TensorFlow, PyTorch, LangChain, LlamaIndex, LangGraph  
+- **Tools & Technologies:** CI/CD, Git, Django, Streamlit, MySQL, GraphQL  
+- **Soft Skills:** Leadership, Writing, Public Speaking, Event Management, Time Management  
+- **Hobbies:** Walking, Meditation, Deep Thinking, Meta-Thinking  
 
-## Work Experience
+---
 
-### Amnil Technology Pvt. Ltd (May 2024 - Present)  
-**AI Engineer**
-- Architecting multi-agent RAG systems with secure retrieval mechanisms.
-- Developing advanced chatbots with post-conversation analysis and SQL/Excel Agents.
-- Hosting and optimizing LLMs (e.g., LLaMA 3.3 3B) for efficient API inference.
+## **Education**
 
-### Ed-Acadia (May 2022 - 2023)  
-**Chief Data Officer**
-- Led AI/ML projects focusing on low-resource language document AI systems.
-- Supervised research in data science and AI applications.
+**Pulchowk Campus, Tribhuvan University**  
+_Bachelor of Computer Engineering_  
+Courses: SDNs, FinTech, Operating Systems, Big Data, AI, Networking, Databases  
 
-### PDSC (Plan Design Solve Create) (May 2022 - 2023)  
-**Software Coordinator**
-- Managed AI and data science research projects.
-- Led technical documentation and implementation strategies.
+---
 
-### DeepLearning.AI (Aug 2021 - Present)  
-**GAN Specialization Mentor**
-- Guided students in understanding generative adversarial networks (GANs).
+## **Works / Experience**
 
-### Robotics Association of Nepal (2021 - Present)  
-**AI & Robotics Member**
-- Developed computer vision projects for Raspberry Pi-based robotics applications.
+### **Amnil Technology Pvt. Ltd, Lalitpur**  
+**AI Engineer** (May 2024 – Present)  
+- Built RAG systems, recursive query engines, SQL/Excel agents, and scheduling tools  
+- Hosted and optimized LLMs (e.g., LLaMA 3.3B) using vLLM inference for low-latency APIs  
+- Created evaluation tools for hallucination detection and report generation  
 
-## Projects
+### **Ed-Acadia, Lalitpur**  
+**Chief Data Officer** (May 2022 – 2023)  
+- Supervised ML research in low-resource language processing and document AI  
+- Led multiple projects in Nepali and Maithili OCR and NLP tasks  
 
-- **Retrieval Augmented Generation System (RAG):** Built a secure RAG system for enhanced document interaction.
-- **Nepali Chat with Doc:** Implemented a chatbot supporting Devanagari and Preeti font text with NLP-based analysis.
-- **Maithili Text Classification:** Developed a BERT-based classifier achieving 87% accuracy on Maithili texts.
-- **Image Recognition-Based Robotics Arm:** Researched signal processing and AI-driven actuator control for robotic applications.
-- **NEPSE Simple:** Designed a stock market analysis tool for Nepal Stock Exchange using web scraping and automation.
-- **Unsupervised Learning Models:** Explored Variational Autoencoders (VAE), GAN, C-GAN, and DC-GAN for generative modeling.
+### **PDSC (Plan Design Solve Create), Lalitpur**  
+**Software Coordinator** (May 2022 – 2023)  
+- Managed software R&D projects with a focus on NLP and data science  
 
-## Education
+### **DeepLearning.AI** *(Remote)*  
+**GAN Specialization Mentor** (Aug 2021 – Present)  
+- Mentored students in understanding unsupervised learning and GAN architectures  
 
-- **Bachelor of Computer Engineering**  
-Pulchowk Campus, Tribhuvan University, Nepal (2019 - 2024)  
-Courses: SDNs, FinTech, Operating Systems, Big Data, AI, Networking, Databases
+### **Robotics Association of Nepal**  
+**AI & Robotics Member** (2021 – Present)  
+- Developed computer vision applications using Raspberry Pi and microcontrollers  
 
-- **Kathmandu Bernhardt School** (2017 - 2019)
-- **School Level Education (2007 - 2017)**
+---
 
-## Certifications & Courses
+## **Projects**
 
-- Deep Learning Specialization (Coursera)
-- GAN Specialization (Coursera)
-- Generative AI with LLM (Google Cloud)
-- Deep Learning with TensorFlow (EDX)
-- Machine Learning (Coursera)
+- **Nepali Chat with Doc:** Multilingual chatbot (Preeti/Devanagari) with guardrails, post-chat analysis, SQL/Excel agents  
+- **RAG System:** Multi-agent RAG with OpenAI, Gemini, Claude APIs; secure info retrieval  
+- **Maithili Text Classifier:** BERT-based classifier with 87% accuracy on Devanagari Maithili corpus  
+- **Bachelor’s Project:** First autoencoder transformer-based LLM trained on Maithili corpus  
+- **IRB Robotic Arm:** Vision-based control system for health monitoring (UN SDG3)  
+- **Nepali NLP Suite:** Includes OCR, sentiment analysis, and character classification  
+- **Unsupervised Generative Models:** Built VAE, GAN, CGAN, ACGAN, DCGAN for image/text experiments  
 
-## Honors and Awards
+---
 
-- **Winner of GritFeat AI Hackathon 2023** - Developed a wearable AI system detecting falls in elderly individuals (0.7986 accuracy).
-- **Runner-up of Dataverse, Locus 2023** - NLP-based abstract classification solution.
-- **Winner of Best AI Project at Deltathon 2022** - AI-driven agricultural assistance system for disease prediction.
-- **Winner of Image Challenge, IT-Meet 2022** - Developed an AI model to classify ballot paper images.
-- **Winner of Capture The Flag, LogPoint 2021** - Reverse-engineered a binary file for security analysis.
+## **Publications**
 
-## Social Contributions
+- **Support Vectors for Text Classification in Imbalanced Data:** Outperformed neural networks using SVM + TF vectors  
+- **Machine Learning Analysis of Tirhuta Lipi:** MobileNet + Logistic Regression yielded 0.97 accuracy in character OCR  
+- **YOLOv8 Counterfeit Nepali Currency Detection:** Achieved 0.82 and 0.9863 recall (front/back) in real-world detection scenarios  
 
-- **Team of NPL Coders Global** - Organized a national-level data science coding competition on Kaggle and HackerRank.
-- **Joint Secretary, NTBNS Student Clubs, IOE Pulchowk** - Conducted technical training sessions and led Nepal’s largest Saraswati Puja event.
-- **Tutor at Children in Technology, WorldLink Nepal** - Educated students on internet safety and cybersecurity.
+---
 
-## Contact
+## **Certifications & Courses**
 
-- **Email:** rockerritesh4@gmail.com
-- **Portfolio:** [sumityadav.com.np](https://sumityadav.com.np)
-- **GitHub:** [github.com/rockerritesh](https://github.com/rockerritesh)
-- **LinkedIn:** [linkedin.com/in/rockerritesh](https://linkedin.com/in/rockerritesh)
-- **Mobile:** +977-9819856148
+- Deep Learning Specialization (Coursera)  
+- GAN Specialization (Coursera)  
+- Generative AI with LLM (Google Cloud)  
+- Deep Learning with TensorFlow (EDX)  
+- Machine Learning (Coursera)  
 
+---
+
+## **Honors and Awards**
+
+- 🥇 **Winner**, GritFeat AI Hackathon 2023 – Elderly fall detection wearable  
+- 🥈 **Runner-Up**, Dataverse @ Locus 2023 – Abstract classification with NLP  
+- 🏆 **Best AI Project**, Deltathon 2022 – Agricultural disease prediction system  
+- 🥇 **Winner**, IT Meet 2022 Image Challenge – Ballot paper classifier  
+- 🥇 **Winner**, Capture The Flag @ LogPoint 2021 – Binary reverse engineering  
+
+---
+
+## **Social Contributions**
+
+- **Team of NPL Coders Global:** National-level data science contests (Kaggle, HackerRank)  
+- **Joint Secretary, NTBNS Pulchowk:** Led Nepal’s largest Saraswati Puja + tech training  
+- **Tutor, Children in Technology (WorldLink):** Taught cybersecurity and safe internet use  
+
+---

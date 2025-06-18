@@ -3,76 +3,437 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Yadav</title>
-    <h1>Say Hello☺️!</h1>
+    <title>Sumit Yadav - AI Portfolio</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body, html {
             height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Hide scrollbars if necessary */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            overflow-x: hidden;
+            background: #0a0a0a;
+            color: #ffffff;
         }
-        .container {
-            text-align: center;
-            z-index: 1; /* Ensure it stays above the background */
+
+        /* Animated background with mesh gradient */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            z-index: -2;
         }
-        #search-button, #test-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        #search-button:hover, #test-button:hover {
-            background-color: #45a049;
-        }
-        #result {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(88, 238, 1, 0.5);
-        }
-        #loading {
-            display: none; /* Initially hidden */
-            margin-top: 20px;
-            font-size: 18px;
-            color: #dd0611;
-        }
-        /* Gradient animation */
-        body::before {
+
+        .background::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(270deg, #ff0077, #4f2dbb, #00bcd4, #76ff03);
-            background-size: 800% 800%;
-            animation: gradientFlow 15s ease infinite;
-            z-index: -1; /* Ensure it stays behind the content */
+            background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite;
         }
-        @keyframes gradientFlow {
-            0% { background-position: 0% 50%; }
+
+        .backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            z-index: -1;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-30px) rotate(120deg); }
+            66% { transform: translateY(-60px) rotate(240deg); }
+        }
+
+        /* Main container */
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: slideDown 1s ease-out;
+        }
+
+        .title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff, #a855f7, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* Search section */
+        .search-section {
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 2rem;
+            animation: slideUp 1s ease-out 0.3s both;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            font-size: 1.1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            color: #ffffff;
+            outline: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .search-input:focus {
+            border-color: #a855f7;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.2rem;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        /* Loading animation */
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 2rem 0;
+            animation: pulse 2s infinite;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid #a855f7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        .loading-text {
+            color: #a855f7;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Result section */
+        .result {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 2rem;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .result-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .result-header {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #a855f7;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .result-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .search-input {
+                padding: 1.2rem 1.5rem;
+                font-size: 1rem;
+            }
+            
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .result-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Glassmorphism effects */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Floating particles */
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float-particle 10s infinite ease-in-out;
+        }
+
+        @keyframes float-particle {
+            0%, 100% {
+                transform: translateY(0px) translateX(0px);
+                opacity: 0;
+            }
+            10%, 90% {
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-100px) translateX(50px);
+            }
         }
     </style>
 </head>
 <body>
+    <div class="background"></div>
+    <div class="backdrop"></div>
+    
+    <!-- Floating particles -->
+    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+    <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+    <div class="particle" style="left: 40%; animation-delay: 6s;"></div>
+    <div class="particle" style="left: 50%; animation-delay: 8s;"></div>
+    <div class="particle" style="left: 60%; animation-delay: 1s;"></div>
+    <div class="particle" style="left: 70%; animation-delay: 3s;"></div>
+    <div class="particle" style="left: 80%; animation-delay: 5s;"></div>
+    <div class="particle" style="left: 90%; animation-delay: 7s;"></div>
+    
     <div class="container">
-        <input type="text" id="query-input" placeholder="Enter your search query" />
-        <button id="search-button">Search</button>
-        <button id="test-button">Test File Load</button>
-        <div id="loading">Loading...</div>
-        <div id="result"></div>
+        <div class="header">
+            <h1 class="title">Sumit Yadav</h1>
+            <p class="subtitle">AI-Powered Portfolio Search</p>
+            <p class="description">
+                Ask me anything about my background, skills, or experience. 
+                I use advanced semantic search to find the most relevant information for you.
+            </p>
+        </div>
+        
+        <div class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="query-input" 
+                    class="search-input"
+                    placeholder="Ask about my experience, skills, projects, or anything else..."
+                />
+                <div class="search-icon">🔍</div>
+            </div>
+            
+            <div class="button-group">
+                <button id="search-button" class="btn btn-primary">
+                    Search Knowledge Base
+                </button>
+                <button id="test-button" class="btn btn-secondary">
+                    Test Connection
+                </button>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Analyzing your question...</div>
+        </div>
+        
+        <div id="result" class="result" style="display: none;">
+            <div class="result-card">
+                <div class="result-header">
+                    <span>✨</span>
+                    <span>AI Response</span>
+                </div>
+                <div class="result-content" id="result-content"></div>
+            </div>
+        </div>
     </div>
+
     <script type="module">
         import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
         import { cos_sim } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
@@ -132,45 +493,56 @@
         async function handleSearch() {
             const query = document.getElementById('query-input').value;
             if (!query) {
-                alert('Please enter a query.');
+                alert('Please enter a question to search for information.');
                 return;
             }
 
             console.log('Query received:', query);
 
-            document.getElementById('loading').style.display = 'block'; // Show loading text
-            document.getElementById('result').innerText = ''; // Clear previous results
+            // Show loading animation
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('result').style.display = 'none';
 
-            // Load the text file and create chunks
-            const text = await loadTextFile('bio.txt');
-            if (!text) {
-                console.error('Failed to load text file.');
-                document.getElementById('loading').style.display = 'none'; // Hide loading text
-                return;
+            try {
+                // Load the text file and create chunks
+                const text = await loadTextFile('bio.txt');
+                if (!text) {
+                    throw new Error('Failed to load text file.');
+                }
+
+                const chunks = chunkText(text);
+
+                // Create the feature-extraction pipeline
+                const extractor = await pipeline('feature-extraction', 'Xenova/gte-small');
+                console.log('Pipeline created');
+
+                // Find the chunk with the highest similarity
+                const bestChunk = await findBestMatch(extractor, query, chunks);
+
+                // Display the result
+                document.getElementById('result-content').textContent = bestChunk;
+                document.getElementById('result').style.display = 'block';
+                
+            } catch (error) {
+                console.error('Search error:', error);
+                document.getElementById('result-content').textContent = 'Sorry, I encountered an error while searching. Please try again.';
+                document.getElementById('result').style.display = 'block';
+            } finally {
+                document.getElementById('loading').style.display = 'none';
             }
-
-            const chunks = chunkText(text);
-
-            // Create the feature-extraction pipeline
-            const extractor = await pipeline('feature-extraction', 'Xenova/gte-small');
-            console.log('Pipeline created');
-
-            // Find the chunk with the highest similarity
-            const bestChunk = await findBestMatch(extractor, query, chunks);
-
-            // Display the result
-            document.getElementById('result').innerText = `Response: ${bestChunk}`;
-            document.getElementById('loading').style.display = 'none'; // Hide loading text
         }
 
+        // Event listeners
         document.getElementById('search-button').addEventListener('click', handleSearch);
 
         document.getElementById('test-button').addEventListener('click', async () => {
             const text = await loadTextFile('bio.txt');
             if (text) {
-                console.log('Loaded text content:', text.substring(0, 200)); // Log the first 200 characters
+                console.log('Loaded text content:', text.substring(0, 200));
+                alert('✅ Connection test successful! Bio file loaded.');
             } else {
                 console.error('Failed to load bio.txt');
+                alert('❌ Connection test failed. Please check if bio.txt exists.');
             }
         });
 
@@ -178,6 +550,15 @@
             if (event.key === 'Enter') {
                 handleSearch();
             }
+        });
+
+        // Add some interactive effects
+        document.getElementById('query-input').addEventListener('focus', function() {
+            this.parentElement.style.transform = 'scale(1.02)';
+        });
+
+        document.getElementById('query-input').addEventListener('blur', function() {
+            this.parentElement.style.transform = 'scale(1)';
         });
     </script>
 </body>

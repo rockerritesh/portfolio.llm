@@ -1,345 +1,234 @@
-## Introduction: **Sumit Yadav**
+# **Sumit Yadav**
 
-**Email:** rockerritesh4@gmail.com  
-**Portfolio:** [sumityadav.com.np](https://sumityadav.com.np)  
+**Email:** [rockerritesh4@gmail.com](mailto:rockerritesh4@gmail.com)  
+**Portfolio:** [https://sumityadav.com.np](https://sumityadav.com.np)  
 **Mobile:** +977-9819856148  
 **GitHub:** [github.com/rockerritesh](https://github.com/rockerritesh)  
 **LinkedIn:** [linkedin.com/in/rockerritesh](https://linkedin.com/in/rockerritesh)  
+**Hugging Face:** [huggingface.co/rockerritesh](https://huggingface.co/rockerritesh)
 
 ---
 
-## **Professional Summary**
+## 🧠 **Professional Summary**
 
-AI Engineer specializing in Natural Language Processing (NLP) and AI optimization, with 5+ years of experience developing production-grade AI systems. Currently architecting cutting-edge solutions including:
+AI Engineer & Researcher specializing in **Natural Language Processing (NLP)**, **AI Optimization**, and **AI Safety**, with 5+ years of experience developing production-grade systems.  
+Currently architecting secure and scalable AI infrastructures, including:
 
-- **Multi-agent RAG systems** with guardrails for secure information retrieval  
+- Multi-agent **RAG systems** with advanced guardrails for safe information retrieval  
 - **Context-aware chatbots** with post-conversation analysis capabilities  
-- **LLM evaluation frameworks** for accuracy and reliability testing  
-- **MCP Server** for easy and fast way to integrate intelligent agents  
-- **Zero Trust Agentic Systems** for enhanced security and data flow management
+- **LLM evaluation frameworks** for reliability and accuracy testing  
+- **MCP Servers** for fast, secure, agentic integration  
+- Mentoring students in **machine learning fundamentals** and **competitive programming**
 
-Proven track record in AI/Machine Learning engineering across numerous NLP projects, including Maithili text classification for low-resource languages (0.87 accuracy) and multilingual document analysis systems. Authored 3 peer-reviewed publications and one open review paper on machine learning optimization, security, and low-resource language processing.
-
----
-
-## **Core Competencies & Expertise**
-
-- **AI Prompt Design** & Advanced Prompt Engineering  
-- **LLM Fine-tuning** & Model Optimization  
-- **Security Document Analysis** & Risk Assessment  
-- **Technical Documentation** & Research Writing  
-- **Cross-functional Collaboration** & Team Leadership  
-- **GRC Data Annotation** & Compliance Systems  
-- **Multi-agent System Architecture** & Design  
-- **RAG System Development** & Implementation  
+Proven success across multiple NLP and AI projects, such as Maithili text classification (0.87 accuracy) and multilingual document analysis systems.  
+Authored **3 peer-reviewed publications** and **1 open review paper** on machine learning optimization, security, and low-resource language processing.
 
 ---
 
-## **Technical Skills & Technologies**
+## ⚙️ **Core Competencies**
 
-### **Programming Languages**
-- **Python** (Advanced) - Primary language for AI/ML development
-- **C/C++** - System programming and performance optimization
-- **Bash** - Automation and scripting
-- **JavaScript** - Web development and API integration
-
-### **AI/ML Frameworks & Libraries**
-- **Deep Learning:** TensorFlow, PyTorch, Keras
-- **LLM Frameworks:** LangChain, LlamaIndex, LangGraph
-- **Transformer Models:** BERT, GPT, T5, LLaMA
-- **Computer Vision:** OpenCV, PIL, scikit-image
-- **NLP Libraries:** NLTK, spaCy, Transformers (Hugging Face)
-
-### **Cloud & Deployment**
-- **Model Hosting:** vLLM inference engine, API integration
-- **Cloud Platforms:** Google Cloud Platform (GCP), AWS basics
-- **Containerization:** Docker for ML model deployment
-- **CI/CD:** GitHub Actions, automated testing pipelines
-
-### **Development Tools & Databases**
-- **Version Control:** Git, GitHub (Advanced)
-- **Web Frameworks:** Django, Streamlit, FastAPI
-- **Databases:** MySQL, PostgreSQL, Vector databases
-- **API Technologies:** GraphQL, REST APIs, WebSockets
-
-### **Specialized Skills**
-- **Low-resource Language Processing** (Nepali, Maithili)
-- **Document AI** & OCR systems
-- **Computer Vision** & Image Processing
-- **Robotics Programming** (Arduino, Raspberry Pi)
-- **Financial AI** & Prediction Systems
+- AI Prompt Design & Engineering  
+- LLM Fine-tuning & Evaluation  
+- Security Document Analysis  
+- Technical Documentation & Research  
+- GRC Data Annotation  
+- Multi-Agent System Design  
+- Team Leadership & Collaboration  
 
 ---
 
-## **Education**
+## 🎓 **Education**
 
-**Pulchowk Engineering College, Tribhuvan University** - Kathmandu, Nepal  
-_Bachelor of Computer Engineering_ (2020-2024)  
+**Pulchowk Engineering College, Tribhuvan University – Kathmandu, Nepal**  
+_Bachelor of Computer Engineering_  
 
-**Relevant Coursework:**
-- Software Defined Networks (SDNs) & Network Security
-- Financial Technology (FinTech) & Blockchain
-- Operating Systems & System Programming
-- Data Structures & Algorithms
-- Big Data Analytics & Processing
-- Artificial Intelligence & Machine Learning
-- Computer Networks & Distributed Systems
-- Database Management Systems
+**Relevant Coursework:**  
+Software Defined Networks (SDNs), FinTech, Operating Systems, Data Structures, Big Data, Artificial Intelligence, Networking, Databases
 
 ---
 
-## **Professional Experience**
+## 💻 **Technical Skills**
 
-### **Astha.ai** *(Remote, USA)*  
-**AI Engineer** (May 2025 – Present)  
-- **Zero Trust Agentic System:** Leading projects related to RAG systems, agent identity management, and secure data flow architecture
-- **Advanced Security Implementation:** Developing cutting-edge security protocols for AI agent interactions
-- **System Architecture:** Designing robust, scalable AI systems with enterprise-grade security
-
-### **Amnil Technology Pvt. Ltd** *(Lalitpur, Nepal)*  
-**AI Engineer** (May 2024 – May 2025)  
-- **Generative AI Engineering:** Developed comprehensive RAG systems, agent-based architectures, recursive query engines, and intelligent chatbots
-- **SQL & Excel Agents:** Built specialized agents for database querying and spreadsheet automation
-- **Scheduling Optimization:** Implemented AI-powered scheduling and resource optimization systems
-- **LLM Infrastructure:** Hosted and optimized various embedding and completion models including LLaMA 3.3 3B using vLLM inference engine
-- **Quality Assurance:** Created advanced guardrails, LLM evaluation frameworks, and automated report generation systems
-- **API Integration:** Ensured efficient performance and seamless API integration for production systems
-
-### **Ed-Acadia** *(Lalitpur, Nepal)*  
-**Chief Data Officer** (May 2022 – 2023)  
-- **AI/ML Leadership:** Supervised multiple research projects focused on data science and machine learning
-- **Document AI Systems:** Led development of DocumentAI systems for low-resource languages (Nepali, Maithili)
-- **Research Supervision:** Managed cross-functional teams working on NLP and computer vision projects
-- **Strategic Planning:** Developed data science roadmaps and research strategies
-
-### **PDSC (Plan Design Solve Create)** *(Lalitpur, Nepal)*  
-**Software Coordinator** (May 2022 – 2023)  
-- **Project Management:** Coordinated software R&D projects with emphasis on data science and AI applications
-- **Research Supervision:** Led research initiatives in machine learning and natural language processing
-- **Team Coordination:** Managed development teams and ensured project delivery timelines
-
-### **DeepLearning.AI** *(Remote)*  
-**GAN Specialization Mentor** (August 2021 – Present)  
-- **Educational Leadership:** Mentoring students in advanced concepts of unsupervised learning and GAN architectures
-- **Curriculum Support:** Providing guidance on VAE, GAN, CGAN, ACGAN, and DCGAN implementations
-- **Student Success:** Helping learners understand complex mathematical concepts behind generative models
-
-### **Robotics Association of Nepal** *(Lalitpur, Nepal)*  
-**AI & Robotics Member** (2021 – Present)  
-- **Computer Vision Systems:** Developed advanced computer vision applications using Raspberry Pi and microcontrollers
-- **Robotics Projects:** Led research and development of AI-powered robotics systems
-- **Hardware Integration:** Specialized in combining AI algorithms with embedded systems
+**Languages:** Python, C, C++, Bash  
+**Frameworks/Libraries:** PyTorch, TensorFlow, LangChain, LlamaIndex, Streamlit, Django  
+**Cloud/Tools:** vLLM inference engine, Docker, CI/CD (GitHub Actions)  
+**Databases:** MySQL, PostgreSQL  
+**Web:** REST API, GraphQL  
+**Soft Skills:** Leadership, Writing, Public Speaking, Event Management  
+**Hobbies:** Walking, Meditation, Deep Thinking, Meta-Thinking  
 
 ---
 
-## **Advanced Projects & Innovations**
+## 🧩 **Professional Experience**
 
-### **Current Generation Projects**
+### **Astha.ai (Remote, USA)**  
+**AI Engineer** — *May 2025 – Present*
 
-#### **Vibe-Coder** (2025)
-AI Agent system for automated Streamlit and FastAPI development
-- **Technologies:** MCP (Model Context Protocol), Claude API, Python, Streamlit
-- **Innovation:** Automated code generation for web applications and APIs
-
-#### **Zero Trust RAG System** (2024-2025)
-Enterprise-grade Retrieval Augmented Generation with security focus
-- **Technologies:** OpenAI, Gemini, Claude APIs, Python, Advanced Security Protocols
-- **Features:** Multi-layered security, agent identity verification, secure data flow
-
-#### **Nepali Chat with Doc** (2024)
-Advanced multilingual chatbot supporting Devanagari and Preeti fonts
-- **Key Features:** 
-  - Guardrails system for safe interactions
-  - Post-conversation analysis and insights
-  - SQL Agent for database queries
-  - Excel Agent for spreadsheet operations
-  - Reflexive Agents for self-improving responses
-  - Preeti to Unicode conversion system
-- **Technologies:** OpenAI, Gemini, Claude APIs, Advanced NLP
-
-### **Research & Academic Projects**
-
-#### **Bachelor's Major Project: Maithili LLM** (2024)
-*Evaluating Auto-Encoder Transformer Language Model for Maithili Text Classification*
-- **Achievement:** First to create a comprehensive Devanagari Maithili corpus
-- **Innovation:** Trained the first LLM specifically for Maithili language
-- **Performance:** Established benchmark with 87% accuracy in text classification
-- **Technologies:** Custom Transformer architecture, BERT, PyTorch, Streamlit, Big Data processing
-
-#### **IRB Robotics Arm** (2020)
-*Image Recognition Based Robotics System*
-- **Purpose:** Health monitoring system aligned with UN SDG3 (Good Health & Well-Being)
-- **Technologies:** Python, Arduino, TensorFlow, Computer Vision
-- **Innovation:** Vision-based control system for medical applications
-
-### **Language & Document AI Systems**
-
-#### **Comprehensive Nepali NLP Suite** (2020-2024)
-- **Devanagari Character Classifier:** VGG16-based system with 94% accuracy
-- **Nepali Sentiment Analysis:** Advanced emotion detection for social media
-- **OCR System:** Text extraction from Nepali documents
-- **Technologies:** Keras, Transformer models, PyTorch, TF-IDF, NLTK
-
-#### **Advanced Document Processing Systems** (2023-2024)
-- **Multilingual Chat Systems:** Support for Nepali documents with font conversion
-- **AI-Powered Memo Creation:** Automated document generation
-- **Excel Manipulation Tools:** Advanced spreadsheet processing with AI
-- **Contract Analysis:** Recursive GPT systems for legal document processing
-- **Translation Systems:** OCR-based Nepali document translation
-- **Multimedia Chat:** Image and audio interaction with TTS and Whisper integration
-
-### **Computer Vision & Detection Systems**
-
-#### **YOLOv8 Counterfeit Currency Detection** (2023)
-Advanced counterfeit Nepali banknote detection system
-- **Performance:** 0.82 recall (front face), 0.9863 recall (back face)
-- **Impact:** Significant advancement in currency security
-- **Technologies:** YOLOv8, Computer Vision, Deep Learning
-
-#### **Financial & Verification Systems** (2022-2023)
-- **Face & Signature Verification:** VGG-based advanced detection with liveness algorithms
-- **Loan Eligibility Prediction:** Knowledge-based reasoning for financial decisions
-- **Technologies:** Advanced face detection, Machine Learning, Knowledge graphs
-
-### **Generative AI & Unsupervised Learning** (2021)
-Comprehensive exploration of generative models
-- **Models Implemented:** VAE, GAN, C-GAN, AC-GAN, DC-GAN
-- **Research Focus:** Latent space behavior analysis and generation quality
-- **Technologies:** Python, NumPy, TensorFlow
-
-### **Web & Automation Projects**
-
-#### **NEPSE Simple** (2020-Present)
-Nepal stock market data presentation system
-- **Features:** Minimal interface, real-time data, automated scraping
-- **Technologies:** GitHub Workflows, WebSockets, JavaScript, RSS/XML processing
+- **Zero Trust Agentic System:** Designing secure RAG and agent identity architectures.  
+- **MCP Security:** Implementing crypto-identities, deterministic tool calls, and access enforcement.  
+- **Vibe-Flow:** Architecting enterprise-ready flow creation systems for real-world problem-solving.  
+- **MCP-Proxy:** Built advanced SSE-to-SSE proxying with role-based access control (RBAC), rate-limiting, and audit logging.  
+- **MCP-Scanner:** Created AI-powered vulnerability scanner (SAFE-MCP) with 78+ attack coverage, 15+ FastAPI endpoints, and real-time detection (prompt injection, tool poisoning).  
+- Integrated Anthropic’s Claude AI for intelligent security analysis and dual-defense architecture (SAFE-T1102, SAFE-M-1).
 
 ---
 
-## **Publications & Research**
+### **Amnil Technology Pvt. Ltd (Lalitpur, Nepal)**  
+**AI Engineer** — *May 2024 – May 2025*
 
-### **Peer-Reviewed Publications**
-
-1. **"Support Vectors Are A Better Way of Text Classification for Imbalanced Data"**
-   - **Achievement:** Demonstrated superior performance of SVC over neural networks for multi-class text classification (100+ classes)
-   - **Innovation:** Term-frequency vectorization approach for imbalanced datasets
-   - **Impact:** Established new benchmarks for text classification in resource-constrained environments
-
-2. **"Machine Learning Analysis of Tirhuta Lipi"**
-   - **Achievement:** 97% accuracy in Tirhuta Lipi character recognition
-   - **Technology:** MobileNet embedding with logistic regression optimization
-   - **Impact:** Enabling translation and OCR capabilities for endangered low-resource scripts
-
-3. **"Revolutionizing Currency Security: A YOLOv8-Based Approach for Automated Detection of Counterfeit Nepali Banknotes"**
-   - **Performance:** 0.82 true positive recall (front), 0.9863 recall (back)
-   - **Innovation:** Real-world counterfeit detection with high accuracy
-   - **Impact:** Significant advancement in financial security technology
-
-### **Open Review Papers**
-- **Machine Learning Optimization and Security Analysis** - Comprehensive review of current ML security challenges and optimization techniques
+- Built **RAG systems**, recursive **agent-based query engines**, and intelligent chatbots.  
+- Hosted LLaMA 3.3 3B and embedding models on **vLLM inference engine** with API integration.  
+- Developed **Guardrails**, **LLM evaluation**, and automated reporting frameworks.  
+- Designed **SQL & Excel Agents** for data automation and scheduling optimization.  
+- Collaborated on enterprise-grade generative AI deployments and model pipelines.
 
 ---
 
-## **Certifications & Professional Development**
+### **Ed-Acadia (Lalitpur, Nepal)**  
+**Chief Data Officer** — *May 2022 – 2023*
 
-### **Specialized AI/ML Certifications**
-- **Deep Learning Specialization** (Coursera - Andrew Ng)
-- **Generative Adversarial Networks (GAN) Specialization** (Coursera)
-- **Generative AI with Large Language Models** (Google Cloud)
-- **Deep Learning with TensorFlow** (edX)
-- **Machine Learning** (Coursera - Stanford University)
-
-### **Cloud & Platform Certifications**
-- **Image Understanding with TensorFlow on GCP** (Google Cloud)
-- **Advanced TensorFlow Techniques** (Google Cloud)
+- Supervised **Document AI** projects for low-resource languages (Nepali, Maithili).  
+- Led large-scale semantic QA systems and similarity-based matching algorithms.  
+- Directed AI research teams and roadmap planning.
 
 ---
 
-## **Honors, Awards & Recognition**
+### **PDSC (Plan Design Solve Create)**  
+**Software Coordinator** — *May 2022 – 2023*
 
-### **Hackathons & Competitions**
-- 🥇 **Winner - GritFeat AI Hackathon 2023** (Locus, February 2023)
-  - **Project:** SWIFT - Wearable fall detection device for elderly
-  - **Achievement:** 79.86% accuracy with immediate emergency alert system
-  - **Innovation:** Hardware-AI integration for healthcare applications
-
-- 🥈 **First Runner-Up - Dataverse 2023** (Locus, January 2023)
-  - **Challenge:** NLP-based abstract classification system
-  - **Innovation:** Advanced text processing for academic document categorization
-
-- 🏆 **Winner - Best AI Project, Deltathon DELTA 3.0** (January 2022)
-  - **Project:** Nepali Harvest - Agricultural AI platform
-  - **Features:** Disease prediction, harvest optimization, crop health assessment
-  - **Impact:** Supporting Nepali farmers with AI-powered agriculture
-
-- 🥇 **Winner - Image Challenge, IT-Meet UP KU** (September 2022)
-  - **Challenge:** Ballot paper classification using computer vision
-  - **Achievement:** High-accuracy image classification under time constraints
-
-- 🥇 **Winner - Capture The Flag, LogPoint** (February 2021)
-  - **Challenge:** Binary reverse engineering and information extraction
-  - **Skills:** Advanced cybersecurity and system analysis
-
-- 🥈 **Runner-Up - DATARUSH by DOCSUMO** (February 2021)
-  - **Project:** NLP-based abstract classification system
-  - **Innovation:** Advanced document processing and categorization
+- Managed research and development teams on AI/ML projects.  
+- Coordinated technical implementation and delivery timelines.
 
 ---
 
-## **Leadership & Social Contributions**
+### **DeepLearning.AI (Virtual)**  
+**GAN Mentor** — *August 2021 – Present*
 
-### **Community Leadership**
-
-#### **Team of NPL Coders Global** (September 2023 – Present)
-- **Role:** National Competition Organizer
-- **Achievement:** Conducted national-level data science competitions on Kaggle and HackerRank
-- **Impact:** Promoting data science education and competitive programming in Nepal
-
-#### **Joint Secretary - NTBNS Student Clubs, IOE Pulchowk Campus** (January 2020 – Present)
-- **Major Achievement:** Organized Nepal's largest Saraswati Puja program
-- **Educational Impact:** Conducted comprehensive technical training programs
-- **Leadership:** Led student community of 500+ members
-- **Event Management:** Coordinated large-scale cultural and technical events
-
-### **Educational Outreach**
-
-#### **Tutor - Children In Technology (WorldLink Nepal)** (November 2023)
-- **Mission:** Digital literacy and internet safety education
-- **Impact:** Educated students about online risks and safe internet practices
-- **Contribution:** Bridging the digital divide through technology education
+- Mentored learners on **GAN Specialization**, covering VAE, CGAN, and ACGAN architectures.  
+- Helped students master mathematical and implementation aspects of generative models.
 
 ---
 
-## **Personal Interests & Philosophy**
+### **Robotics Association of Nepal (Lalitpur)**  
+**AI & Robotics Member** — *2021 – Present*
 
-### **Mindfulness & Reflection**
-- **Walking & Meditation:** Regular practice for mental clarity and creative thinking
-- **Deep Thinking:** Philosophical exploration of AI ethics and human-machine interaction
-- **Meta-Thinking:** Analyzing thought processes and cognitive patterns
-
-### **Professional Philosophy**
-- **Continuous Learning:** Committed to staying at the forefront of AI research and development
-- **Ethical AI:** Passionate about developing responsible AI systems with proper guardrails
-- **Knowledge Sharing:** Dedicated to mentoring and educating the next generation of AI engineers
-- **Innovation for Good:** Using AI technology to solve real-world problems and improve lives
-
-### **Technical Interests**
-- **Low-Resource Language Processing:** Bridging language barriers through technology
-- **Multi-Agent Systems:** Exploring collaborative AI architectures
-- **Security in AI:** Developing trustworthy and secure AI systems
-- **Edge AI:** Optimizing AI for resource-constrained environments
+- Developed **computer vision** and **Raspberry Pi-based** robotics systems.  
+- Worked on AI–hardware integration for robotics applications.
 
 ---
 
-## **Contact & Professional Networks**
+## 🚀 **Major Projects**
 
-- **Email:** rockerritesh4@gmail.com
-- **Portfolio:** [https://sumityadav.com.np](https://sumityadav.com.np)
-- **Professional Resume:** [https://sumityadav.com.np/resume.pdf](https://sumityadav.com.np/resume.pdf)
-- **GitHub:** [https://github.com/rockerritesh](https://github.com/rockerritesh)
-- **LinkedIn:** [https://linkedin.com/in/rockerritesh](https://linkedin.com/in/rockerritesh)
-- **Mobile:** +977-9819856148
+### **SAFE-MCP Security Framework**
+- Authored core attack techniques: **SAFE-T1601**, **SAFE-T1703**, and **SAFE-T1110** for the Security Analysis Framework.  
+- Contributed detection rules and mitigation strategies to strengthen **MCP security**.  
+- **Tech:** Python, YAML, MITRE ATT&CK, Sigma Rules.
+
+### **MCP-Proxy & MCP-Scanner**
+- Developed advanced proxying, scanning, and AI defense mechanisms.  
+- Integrated real-time monitoring, role-based policies, and security analytics.
+
+### **Agents.ai**
+- Multi-agent orchestration system for automated tool and agent selection using semantic similarity.  
+- **Tech:** MCP, Claude API, Streamlit, Python.
+
+### **Vibe-Coder**
+- AI agent for auto-generating **Streamlit** and **FastAPI** code.  
+- **Tech:** MCP, Claude API, Python.
+
+### **Retrieval Augmented Generation (RAG) System**
+- Enhanced information access via AI-driven document understanding.  
+- **Tech:** OpenAI, Gemini, Claude API.
+
+### **Nepali Chat with Doc**
+- Multilingual chatbot supporting **Devanagari** and **Preeti** fonts.  
+- Integrated guardrails, post-conversation analysis, and Reflexive Agents.  
+- **Tech:** OpenAI, Gemini, Claude API.
+
+### **Bachelor’s Major Project: Maithili LLM**
+- Created the first **Devanagari Maithili corpus** and trained **maiBERT** achieving 87.02% accuracy.  
+- Open-sourced on Hugging Face for further fine-tuning.  
+- **Tech:** BERT, PyTorch, Streamlit.
+
+### **IRB Robotics Arm**
+- Image Recognition–based robotic arm project aligned with **UN SDG3 (Health)**.  
+- **Tech:** Python, Arduino, TensorFlow.
+
+### **Nepali NLP Suite**
+- **Devanagari Classifier (94% acc)**, **Sentiment Analysis**, and **OCR systems**.  
+- **Tech:** Keras, PyTorch, Transformers, NLTK.
+
+### **YOLOv8 Counterfeit Detection**
+- Counterfeit Nepali banknote detection with **0.82 (front)** and **0.9863 (back)** recall.  
+- **Tech:** YOLOv8, Deep Learning.
+
+### **Unsupervised Learning Models**
+- Implemented **VAE, GAN, C-GAN, AC-GAN, DC-GAN** for latent space analysis.  
+- **Tech:** TensorFlow, NumPy.
+
+### **NEPSE Simple**
+- Minimal stock market visualization platform.  
+- **Tech:** WebSockets, JavaScript, RSS/XML, GitHub Automation.
 
 ---
 
-*"Building the future of AI, one intelligent system at a time. Passionate about creating technology that understands, learns, and serves humanity."*
+## 📚 **Publications**
+
+1. **“Can maiBERT Speak for Maithili?”**  
+   - Introduced a BERT-based Maithili model achieving **87.02% accuracy**.  
+   - [arXiv:2508.11290](https://arxiv.org/pdf/2508.11290)
+
+2. **“SafeConstellations: Steering LLM Safety to Reduce Over-Refusals Through Task-Specific Trajectory”**  
+   - Reduced LLM over-refusals by **73%** while maintaining safety.  
+   - [arXiv:2509.15048](https://arxiv.org/abs/2509.15048)
+
+3. **“Revolutionizing Currency Security: YOLOv8-Based Counterfeit Nepali Banknote Detection”**  
+   - Improved real-world financial security with recall up to **0.9863**.
+
+4. **“Machine Learning Analysis of Tirhuta Lipi”**  
+   - Achieved **97% accuracy** in Tirhuta Lipi recognition using MobileNet + Logistic Regression.  
+   - [ResearchGate Link](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi)
+
+5. **“Support Vectors Are a Better Way of Text Classification for Imbalanced Data”**  
+   - Presented robust **SVC** method outperforming neural networks on 100+ classes.  
+   - [ResearchGate Link](https://www.researchgate.net/publication/371514138_SUPPORT_VECTORS_ARE_A_BETTER_WAY_OF_TEXT_CLASSIFICATION_FOR_IMBALANCED_DATA)
+
+---
+
+## 🏆 **Honors & Awards**
+
+- 🥇 **Winner – GritFeat AI Hackathon 2023 (Locus)**  
+  Project: *SWIFT – Wearable fall detection for elderly* (0.7986 accuracy).  
+- 🥈 **First Runner-Up – Dataverse 2023 (Locus)**  
+  NLP-based abstract classification system.  
+- 🏆 **Best AI Project – Deltathon DELTA 3.0 (2022)**  
+  *Nepali Harvest* – Agricultural AI system for disease and harvest prediction.  
+- 🥇 **Winner – IT-Meet Image Challenge (KU, 2022)**  
+  Ballot paper image classification challenge.  
+- 🥇 **Winner – Capture The Flag (LogPoint, 2021)**  
+  Binary reverse engineering and exploitation.  
+- 🥈 **Runner-Up – Datarush by DOCSUMO (2021)**  
+  Abstract classification using NLP.
+
+---
+
+## 🌍 **Community & Social Contributions**
+
+- **NPL Coders Global:** Organizer of national data science competitions on Kaggle & HackerRank.  
+- **Joint Secretary, NTBNS Club (Pulchowk Campus):** Led 500+ students, organized Nepal’s largest Saraswati Puja.  
+- **Tutor – Children In Technology (WorldLink Nepal):** Taught digital literacy & internet safety.  
+
+---
+
+## 💬 **Personal Philosophy**
+
+- **Mindfulness & Reflection:** Daily walking and meditation for creative focus.  
+- **Ethical AI:** Building responsible AI with strong guardrails and user trust.  
+- **Innovation for Good:** Using AI to solve real-world human problems.  
+- **Continuous Learning:** Staying at the frontier of LLMs and AI safety research.  
+
+---
+
+**“Building the future of AI, one intelligent system at a time.”**
+
+[🔗 Download PDF Résumé](https://sumityadav.com.np/resume.pdf)

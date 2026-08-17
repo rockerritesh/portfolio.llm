@@ -3,640 +3,794 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Yadav - AI Portfolio</title>
+    <title>Ask Sumit Yadav — AI Portfolio Chat</title>
+    <meta name="description" content="A retrieval-augmented chatbot that answers questions about Sumit Yadav's research, experience and projects. Runs entirely in your browser.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#08070d">
+
+    <meta property="og:title" content="Ask Sumit Yadav — AI Portfolio Chat">
+    <meta property="og:description" content="A retrieval-augmented chatbot answering questions about Sumit Yadav's research, experience and projects — running fully in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://llm.sumityadav.com.np/">
+    <meta property="og:image" content="https://llm.sumityadav.com.np/apple-touch-icon.png">
+    <meta name="twitter:card" content="summary">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --accent: #a855f7;
+            --accent-soft: rgba(168, 85, 247, 0.35);
+            --link: #7dd3fc;
+            --text: rgba(255, 255, 255, 0.92);
+            --text-dim: rgba(255, 255, 255, 0.62);
+            --text-faint: rgba(255, 255, 255, 0.42);
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-strong: rgba(255, 255, 255, 0.13);
+            --edge: rgba(255, 255, 255, 0.16);
         }
 
-        body, html {
-            height: 100%;
+        html, body { height: 100%; }
+
+        body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            overflow-x: hidden;
-            background: #0a0a0a;
-            color: #ffffff;
+            background: #08070d;
+            color: var(--text);
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Animated background with mesh gradient */
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-            z-index: -2;
-        }
-
-        .background::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
-            animation: float 20s ease-in-out infinite;
-        }
-
+        /* ---------- Background ---------- */
         .backdrop {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(8px);
+            inset: 0;
+            background:
+                radial-gradient(circle at 18% 12%, rgba(102, 126, 234, 0.30) 0%, transparent 45%),
+                radial-gradient(circle at 82% 22%, rgba(240, 147, 251, 0.24) 0%, transparent 45%),
+                radial-gradient(circle at 50% 88%, rgba(79, 172, 254, 0.24) 0%, transparent 50%),
+                linear-gradient(160deg, #0b0a14 0%, #100c1c 55%, #08070d 100%);
+            animation: drift 26s ease-in-out infinite alternate;
             z-index: -1;
         }
 
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+        @keyframes drift {
+            from { transform: scale(1) translateY(0); }
+            to   { transform: scale(1.12) translateY(-24px); }
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-30px) rotate(120deg); }
-            66% { transform: translateY(-60px) rotate(240deg); }
-        }
-
-        /* Main container */
-        .container {
-            min-height: 100vh;
+        /* ---------- Shell ---------- */
+        .app {
+            height: 100%;
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 1.25rem 1rem 1rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            position: relative;
+            gap: 1rem;
         }
 
-        /* Header */
+        /* ---------- Header ---------- */
         .header {
-            text-align: center;
-            margin-bottom: 3rem;
-            animation: slideDown 1s ease-out;
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            padding: 0.85rem 1.1rem;
+            background: var(--glass);
+            border: 1px solid var(--edge);
+            border-radius: 18px;
+            backdrop-filter: blur(16px);
+            flex-shrink: 0;
         }
 
-        .title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffffff, #a855f7, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-            letter-spacing: -0.02em;
+        .avatar {
+            width: 44px; height: 44px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea, #a855f7 55%, #f093fb);
+            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.35);
         }
 
-        .subtitle {
-            font-size: 1.25rem;
+        .who { flex: 1; min-width: 0; }
+
+        .who h1 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .who p {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            margin-top: 0.15rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            background: rgba(0, 0, 0, 0.28);
+            border: 1px solid var(--edge);
+            padding: 0.4rem 0.7rem;
+            border-radius: 999px;
+            flex-shrink: 0;
+            max-width: 45%;
+        }
+
+        .status span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .dot {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: #fbbf24;
+            flex-shrink: 0;
+            animation: blink 1.4s ease-in-out infinite;
+        }
+
+        .status[data-state="ready"] .dot { background: #34d399; animation: none; }
+        .status[data-state="error"] .dot { background: #f87171; animation: none; }
+
+        @keyframes blink { 50% { opacity: 0.3; } }
+
+        /* ---------- Thread ---------- */
+        .thread {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 0.25rem 0.35rem 0.5rem;
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent-soft) transparent;
+        }
+
+        .thread::-webkit-scrollbar { width: 7px; }
+        .thread::-webkit-scrollbar-thumb { background: var(--accent-soft); border-radius: 99px; }
+
+        .msg {
+            display: flex;
+            flex-direction: column;
+            max-width: 88%;
+            animation: rise 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        @keyframes rise {
+            from { opacity: 0; transform: translateY(12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .msg.user { align-self: flex-end; align-items: flex-end; }
+        .msg.bot  { align-self: flex-start; align-items: flex-start; }
+
+        .bubble {
+            padding: 0.85rem 1.1rem;
+            border-radius: 18px;
+            font-size: 0.97rem;
+            line-height: 1.68;
+            backdrop-filter: blur(12px);
+            overflow-wrap: anywhere;
+        }
+
+        .msg.user .bubble {
+            background: linear-gradient(135deg, #667eea, #7c4dbe);
+            border-bottom-right-radius: 6px;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.28);
+        }
+
+        .msg.bot .bubble {
+            background: var(--glass-strong);
+            border: 1px solid var(--edge);
+            border-bottom-left-radius: 6px;
+        }
+
+        .msg.system .bubble {
+            background: rgba(251, 191, 36, 0.09);
+            border: 1px solid rgba(251, 191, 36, 0.28);
+            font-size: 0.88rem;
             color: rgba(255, 255, 255, 0.8);
-            font-weight: 400;
+        }
+
+        /* Typing indicator shown while the answer is generated and validated */
+        .typing { display: inline-flex; gap: 5px; align-items: center; height: 1.1em; }
+
+        .typing i {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: bounce 1.3s ease-in-out infinite;
+        }
+
+        .typing i:nth-child(2) { animation-delay: 0.18s; }
+        .typing i:nth-child(3) { animation-delay: 0.36s; }
+
+        @keyframes bounce {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.45; }
+            30%           { transform: translateY(-5px); opacity: 1; }
+        }
+
+        /* ---------- Sources ---------- */
+        .sources {
+            margin-top: 0.55rem;
+            width: 100%;
+            font-size: 0.84rem;
+        }
+
+        .sources summary {
+            cursor: pointer;
+            color: var(--text-faint);
+            font-size: 0.76rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            list-style: none;
+            padding: 0.3rem 0;
+            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .sources summary::-webkit-details-marker { display: none; }
+        .sources summary:hover { color: var(--link); }
+        .sources summary::before { content: '▸'; transition: transform 0.2s; }
+        .sources[open] summary::before { transform: rotate(90deg); }
+
+        .cited {
+            padding: 0.85rem 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-left: 2px solid var(--accent-soft);
+            border-radius: 12px;
+            margin-top: 0.4rem;
+        }
+
+        .cited-head {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent);
             margin-bottom: 0.5rem;
         }
 
-        .description {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.6);
-            max-width: 600px;
+        /* ---------- Rendered markdown ---------- */
+        .md > :first-child { margin-top: 0; }
+        .md > :last-child { margin-bottom: 0; }
+        .md p { margin: 0.45rem 0; }
+        .md strong { color: #fff; font-weight: 700; }
+        .md h2, .md h3, .md h4 { font-size: 1em; font-weight: 700; margin: 0.7rem 0 0.35rem; color: #c4b5fd; }
+        .md a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(125, 211, 252, 0.35); }
+        .md a:hover { color: #bae6fd; border-bottom-color: #bae6fd; }
+        .md ul, .md ol { margin: 0.45rem 0 0.45rem 1.25rem; }
+        .md li { margin: 0.28rem 0; }
+        .md li::marker { color: var(--accent); }
+        .md code {
+            font-family: 'SF Mono', ui-monospace, Menlo, monospace;
+            font-size: 0.87em;
+            background: rgba(255, 255, 255, 0.11);
+            padding: 0.12em 0.38em;
+            border-radius: 5px;
+        }
+        .md hr { border: none; border-top: 1px solid rgba(255,255,255,0.12); margin: 0.7rem 0; }
+
+        /* ---------- Suggestions ---------- */
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .chip {
+            font: inherit;
+            font-size: 0.82rem;
+            color: var(--text-dim);
+            background: var(--glass);
+            border: 1px solid var(--edge);
+            padding: 0.5rem 0.85rem;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.2s;
+            backdrop-filter: blur(10px);
+        }
+
+        .chip:hover:not(:disabled) {
+            color: #fff;
+            border-color: var(--accent);
+            background: rgba(168, 85, 247, 0.16);
+            transform: translateY(-1px);
+        }
+
+        .chip:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        /* ---------- Composer ---------- */
+        .composer {
+            display: flex;
+            gap: 0.6rem;
+            align-items: flex-end;
+            padding: 0.55rem 0.6rem 0.55rem 1.1rem;
+            background: var(--glass);
+            border: 1px solid var(--edge);
+            border-radius: 20px;
+            backdrop-filter: blur(16px);
+            transition: border-color 0.25s, box-shadow 0.25s;
+            flex-shrink: 0;
+        }
+
+        .composer:focus-within {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.13);
+        }
+
+        .composer textarea {
+            flex: 1;
+            font: inherit;
+            font-size: 0.97rem;
+            line-height: 1.5;
+            color: var(--text);
+            background: none;
+            border: none;
+            outline: none;
+            resize: none;
+            max-height: 130px;
+            padding: 0.55rem 0;
+        }
+
+        .composer textarea::placeholder { color: var(--text-faint); }
+        .composer textarea:disabled { cursor: not-allowed; }
+
+        .send {
+            width: 40px; height: 40px;
+            flex-shrink: 0;
+            border: none;
+            border-radius: 13px;
+            background: linear-gradient(135deg, #667eea, #a855f7);
+            color: #fff;
+            font-size: 1.05rem;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .send:hover:not(:disabled) { transform: scale(1.07); }
+        .send:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        .foot {
+            text-align: center;
+            font-size: 0.68rem;
+            color: var(--text-faint);
+            flex-shrink: 0;
             line-height: 1.6;
         }
 
-        /* Search section */
-        .search-section {
-            width: 100%;
-            max-width: 700px;
-            margin-bottom: 2rem;
-            animation: slideUp 1s ease-out 0.3s both;
-        }
+        .foot a { color: var(--text-dim); }
 
-        .search-container {
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 1.5rem 2rem;
-            font-size: 1.1rem;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            color: #ffffff;
-            outline: none;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .search-input::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .search-input:focus {
-            border-color: #a855f7;
-            box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .search-icon {
-            position: absolute;
-            right: 1.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 1.2rem;
-        }
-
-        /* Buttons */
-        .button-group {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            font-weight: 600;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-primary:hover {
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .btn:hover::before {
-            left: 100%;
-        }
-
-        /* Loading animation */
-        .loading {
-            display: none;
-            text-align: center;
-            margin: 2rem 0;
-            animation: pulse 2s infinite;
-        }
-
-        .loading-spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-top: 3px solid #a855f7;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 1rem;
-        }
-
-        .loading-text {
-            color: #a855f7;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        /* Result section */
-        .result {
-            width: 100%;
-            max-width: 800px;
-            margin-top: 2rem;
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        .result-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            padding: 2rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .result-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
-        }
-
-        .result-header {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #a855f7;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .result-content {
-            font-size: 1.05rem;
-            line-height: 1.75;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Rendered markdown inside the result card */
-        .result-content > :first-child { margin-top: 0; }
-        .result-content > :last-child { margin-bottom: 0; }
-        .result-content h1,
-        .result-content h2,
-        .result-content h3,
-        .result-content h4 {
-            font-weight: 700;
-            line-height: 1.3;
-            margin: 1.3rem 0 0.6rem;
-            color: #c4b5fd;
-        }
-        .result-content h1 { font-size: 1.55rem; }
-        .result-content h2 { font-size: 1.3rem; }
-        .result-content h3 { font-size: 1.12rem; color: #a855f7; }
-        .result-content h4 { font-size: 1rem; color: rgba(255, 255, 255, 0.85); }
-        .result-content p { margin: 0.55rem 0; }
-        .result-content strong { color: #ffffff; font-weight: 700; }
-        .result-content em { color: rgba(255, 255, 255, 0.85); }
-        .result-content a {
-            color: #7dd3fc;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(125, 211, 252, 0.4);
-            transition: color 0.2s ease, border-color 0.2s ease;
-        }
-        .result-content a:hover { color: #bae6fd; border-bottom-color: #bae6fd; }
-        .result-content ul,
-        .result-content ol { margin: 0.55rem 0 0.55rem 1.4rem; }
-        .result-content li { margin: 0.35rem 0; }
-        .result-content ul li::marker { color: #a855f7; }
-        .result-content code {
-            font-family: 'SF Mono', ui-monospace, 'Fira Code', Menlo, monospace;
-            font-size: 0.88em;
-            background: rgba(255, 255, 255, 0.12);
-            padding: 0.15em 0.4em;
-            border-radius: 6px;
-        }
-        .result-content pre {
-            background: rgba(0, 0, 0, 0.35);
-            padding: 1rem;
-            border-radius: 12px;
-            overflow-x: auto;
-            margin: 0.8rem 0;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .result-content pre code { background: none; padding: 0; font-size: 0.85em; }
-        .result-content blockquote {
-            border-left: 3px solid #a855f7;
-            padding-left: 1rem;
-            margin: 0.8rem 0;
-            color: rgba(255, 255, 255, 0.75);
-            font-style: italic;
-        }
-        .result-content hr {
-            border: none;
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-            margin: 1rem 0;
-        }
-
-        /* Animations */
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            
-            .search-input {
-                padding: 1.2rem 1.5rem;
-                font-size: 1rem;
-            }
-            
-            .btn {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.9rem;
-            }
-            
-            .result-card {
-                padding: 1.5rem;
-            }
-        }
-
-        /* Glassmorphism effects */
-        .glass {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        /* Floating particles */
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            animation: float-particle 10s infinite ease-in-out;
-        }
-
-        @keyframes float-particle {
-            0%, 100% {
-                transform: translateY(0px) translateX(0px);
-                opacity: 0;
-            }
-            10%, 90% {
-                opacity: 1;
-            }
-            50% {
-                transform: translateY(-100px) translateX(50px);
-            }
+        @media (max-width: 640px) {
+            .app { padding: 0.75rem 0.65rem; gap: 0.75rem; }
+            .msg { max-width: 94%; }
+            .who p, .foot { display: none; }
+            .status { max-width: 40%; }
         }
     </style>
 </head>
 <body>
-    <div class="background"></div>
     <div class="backdrop"></div>
-    
-    <!-- Floating particles -->
-    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
-    <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
-    <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
-    <div class="particle" style="left: 40%; animation-delay: 6s;"></div>
-    <div class="particle" style="left: 50%; animation-delay: 8s;"></div>
-    <div class="particle" style="left: 60%; animation-delay: 1s;"></div>
-    <div class="particle" style="left: 70%; animation-delay: 3s;"></div>
-    <div class="particle" style="left: 80%; animation-delay: 5s;"></div>
-    <div class="particle" style="left: 90%; animation-delay: 7s;"></div>
-    
-    <div class="container">
-        <div class="header">
-            <h1 class="title">Sumit Yadav</h1>
-            <p class="subtitle">AI-Powered Portfolio Search</p>
-            <p class="description">
-                Ask me anything about my background, skills, or experience. 
-                I use advanced semantic search to find the most relevant information for you.
-            </p>
-        </div>
-        
-        <div class="search-section">
-            <div class="search-container">
-                <input 
-                    type="text" 
-                    id="query-input" 
-                    class="search-input"
-                    placeholder="Ask about my experience, skills, projects, or anything else..."
-                />
-                <div class="search-icon">🔍</div>
+
+    <div class="app">
+        <header class="header">
+            <img class="avatar" src="apple-touch-icon.png" alt="Sumit Yadav" width="44" height="44">
+            <div class="who">
+                <h1>Ask Sumit Yadav</h1>
+                <p>AI Safety &amp; Mechanistic Interpretability Researcher</p>
             </div>
-            
-            <div class="button-group">
-                <button id="search-button" class="btn btn-primary">
-                    Search Knowledge Base
-                </button>
-                <button id="test-button" class="btn btn-secondary">
-                    Test Connection
-                </button>
+            <div class="status" id="status" data-state="loading">
+                <i class="dot"></i><span id="status-text">Starting…</span>
             </div>
-        </div>
-        
-        <div id="loading" class="loading">
-            <div class="loading-spinner"></div>
-            <div class="loading-text">Analyzing your question...</div>
-        </div>
-        
-        <div id="result" class="result" style="display: none;">
-            <div class="result-card">
-                <div class="result-header">
-                    <span>✨</span>
-                    <span>AI Response</span>
-                </div>
-                <div class="result-content" id="result-content"></div>
-            </div>
-        </div>
+        </header>
+
+        <main class="thread" id="thread" aria-live="polite"></main>
+
+        <div class="chips" id="chips"></div>
+
+        <form class="composer" id="composer">
+            <textarea id="input" rows="1" placeholder="Ask about my research, experience, papers or projects…"
+                      autocomplete="off" disabled></textarea>
+            <button class="send" id="send" type="submit" disabled aria-label="Send">↑</button>
+        </form>
+
+        <p class="foot">
+            Retrieval-augmented chat running fully in your browser — no server, no tracking.
+            Search by <code>gte-small</code>, answers by <code>LaMini-Flan-T5-77M</code>, via
+            <a href="https://github.com/huggingface/transformers.js" target="_blank" rel="noopener">Transformers.js</a>.
+        </p>
     </div>
 
     <script type="module">
-        import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
-        import { cos_sim } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
-        import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
+    import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.2.0';
+    import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
+    import {
+        CONFIG, chunkBio, buildLexicon, bm25, tokenize, buildSearchQuery,
+        cosine, fuse, buildPrompt, tidy, chooseAnswer,
+    } from './rag.js';
 
-        marked.setOptions({ gfm: true, breaks: true });
+    // Models are fetched from the Hugging Face CDN and cached by the browser's
+    // Cache API, so the download cost is paid once per visitor. The retrieval
+    // logic itself lives in rag.js so it can be unit-tested outside the browser.
+    env.allowLocalModels = false;
+    marked.setOptions({ gfm: true, breaks: true });
 
-        // Render a retrieved chunk (markdown) into the result card as formatted HTML.
-        // chunkText() splits on '##', which strips/​mangles the leading heading marker,
-        // so normalize the first line back into a clean H2 before parsing.
-        function renderChunk(chunk) {
-            const md = chunk.trim().replace(/^#{0,6}\s*/, '## ');
-            const el = document.getElementById('result-content');
-            el.innerHTML = marked.parse(md);
-            // open links in a new tab, safely
-            el.querySelectorAll('a').forEach((a) => {
-                a.target = '_blank';
-                a.rel = 'noopener noreferrer';
-            });
+    const STATE = {
+        chunks: [], vectors: [], lexicon: null,
+        embedder: null, generator: null, genPromise: null,
+        history: [], busy: false,
+    };
+
+    const el = {
+        thread: document.getElementById('thread'),
+        chips: document.getElementById('chips'),
+        form: document.getElementById('composer'),
+        input: document.getElementById('input'),
+        send: document.getElementById('send'),
+        status: document.getElementById('status'),
+        statusText: document.getElementById('status-text'),
+    };
+
+    /* ============================================================
+       1. Retrieval — dense + lexical, fused by rank
+       ============================================================ */
+
+    async function embed(texts) {
+        const out = await STATE.embedder(texts, { pooling: 'mean', normalize: true });
+        return out.tolist();
+    }
+
+    async function retrieve(query) {
+        const searchQuery = buildSearchQuery(query, STATE.history);
+        const [qv] = await embed([searchQuery]);
+        const dense = STATE.vectors.map((v) => cosine(qv, v));
+        const lexical = bm25(STATE.lexicon, tokenize(searchQuery));
+        return fuse(STATE.chunks, dense, lexical);
+    }
+
+    /* ============================================================
+       2. Answer composition
+       ============================================================ */
+
+    // Note: token-by-token streaming is deliberately not used here. Every answer
+    // has to clear looksDegenerate() before it is shown, and streaming would put
+    // text on screen that we then have to retract — so the answer is revealed
+    // once, after validation, behind a typing indicator.
+    async function generate(query, hits) {
+        const gen = await STATE.genPromise;
+        const out = await gen(buildPrompt(query, hits), {
+            max_new_tokens: CONFIG.maxNewTokens,
+            do_sample: false,
+            repetition_penalty: 1.15,
+        });
+        return tidy(out[0].generated_text);
+    }
+    /* ============================================================
+       3. UI
+       ============================================================ */
+
+    const scrollDown = () => { el.thread.scrollTop = el.thread.scrollHeight; };
+
+    function setStatus(text, state = 'loading') {
+        el.statusText.textContent = text;
+        el.status.dataset.state = state;
+    }
+
+    function addMessage(role, html) {
+        const msg = document.createElement('div');
+        msg.className = `msg ${role}`;
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        if (role === 'user') bubble.textContent = html;
+        else bubble.innerHTML = html;
+        msg.appendChild(bubble);
+        el.thread.appendChild(msg);
+        scrollDown();
+        return { msg, bubble };
+    }
+
+    const escape = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    function setAnswer(bubble, text, hedged) {
+        bubble.className = 'bubble md';
+        bubble.innerHTML = (hedged
+            ? "<p><em>I'm not certain this is what you meant — closest I have:</em></p>"
+            : '') + `<p>${escape(text)}</p>`;
+    }
+
+    function attachSources(msg, hits) {
+        if (!hits.length) return;
+        const details = document.createElement('details');
+        details.className = 'sources';
+
+        const summary = document.createElement('summary');
+        summary.textContent = hits.length === 1
+            ? 'From 1 section of my bio'
+            : `From ${hits.length} sections of my bio`;
+        details.appendChild(summary);
+
+        for (const { chunk } of hits) {
+            const box = document.createElement('div');
+            box.className = 'cited';
+            const head = document.createElement('div');
+            head.className = 'cited-head';
+            head.textContent = chunk.title;
+            const body = document.createElement('div');
+            body.className = 'md';
+            body.innerHTML = marked.parse(chunk.markdown);
+            body.querySelectorAll('a').forEach((a) => { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+            box.append(head, body);
+            details.appendChild(box);
         }
 
-        async function loadTextFile(url) {
-            try {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const text = await response.text();
-                console.log('Text file loaded successfully');
-                return text;
-            } catch (error) {
-                console.error('Error loading text file:', error);
-                return null;
-            }
+        msg.appendChild(details);
+        scrollDown();
+    }
+
+    const STARTERS = [
+        'Who is Sumit, in short?',
+        'What does he do at Astha.ai?',
+        'Tell me about SafeConstellations',
+        'What is maiBERT?',
+        'What awards has he won?',
+        'How do I contact him?',
+    ];
+
+    function renderChips(list = STARTERS) {
+        el.chips.innerHTML = '';
+        for (const text of list) {
+            const chip = document.createElement('button');
+            chip.type = 'button';
+            chip.className = 'chip';
+            chip.textContent = text;
+            chip.disabled = STATE.busy || !STATE.embedder;
+            chip.addEventListener('click', () => ask(text));
+            el.chips.appendChild(chip);
         }
+    }
 
-        function chunkText(text) {
-            const chunks = text.split('##').map(chunk => chunk.trim()).filter(chunk => chunk.length > 0);
-            console.log('Text chunked into', chunks.length, 'chunks');
-            return chunks;
-        }
+    function setBusy(busy) {
+        STATE.busy = busy;
+        el.input.disabled = busy || !STATE.embedder;
+        el.send.disabled = busy || !STATE.embedder;
+        el.chips.querySelectorAll('.chip').forEach((c) => { c.disabled = busy || !STATE.embedder; });
+        if (!busy && STATE.embedder) el.input.focus();
+    }
 
-        async function getEmbeddings(extractor, text) {
-            try {
-                const output = await extractor([text], { pooling: 'mean', normalize: true });
-                console.log('Embeddings computed for text');
-                return output[0].data;
-            } catch (error) {
-                console.error('Error computing embeddings:', error);
-                return null;
-            }
-        }
+    /* ============================================================
+       4. Ask pipeline
+       ============================================================ */
 
-        async function findBestMatch(extractor, query, chunks) {
-            const queryEmbedding = await getEmbeddings(extractor, query);
-            let bestChunk = '';
-            let highestSimilarity = -1;
+    async function ask(query) {
+        query = query.trim();
+        if (!query || STATE.busy || !STATE.embedder) return;
 
-            for (const chunk of chunks) {
-                const chunkEmbedding = await getEmbeddings(extractor, chunk);
-                const similarity = cos_sim(queryEmbedding, chunkEmbedding);
-                console.log('Similarity for chunk:', similarity);
+        addMessage('user', query);
+        el.input.value = '';
+        el.input.style.height = 'auto';
+        setBusy(true);
 
-                if (similarity > highestSimilarity) {
-                    highestSimilarity = similarity;
-                    bestChunk = chunk;
-                }
-            }
+        const { msg, bubble } = addMessage('bot', '<span class="typing"><i></i><i></i><i></i></span>');
 
-            console.log('Best chunk found with similarity:', highestSimilarity);
-            return bestChunk;
-        }
+        try {
+            const { hits, bestDense } = await retrieve(query);
 
-        async function handleSearch() {
-            const query = document.getElementById('query-input').value;
-            if (!query) {
-                alert('Please enter a question to search for information.');
+            // Nothing in the bio is close enough — say so instead of
+            // confidently answering from an unrelated section.
+            if (bestDense < CONFIG.weakAt) {
+                bubble.innerHTML = '<div class="md">'
+                    + "<p>That's outside what my bio covers, so I'd rather not guess. "
+                    + 'Ask me about my research, publications, work experience, projects, skills, '
+                    + 'education, awards or how to get in touch.</p></div>';
+                STATE.history.push({ query, topic: '' });
+                renderChips();
                 return;
             }
 
-            console.log('Query received:', query);
-
-            // Show loading animation
-            document.getElementById('loading').style.display = 'block';
-            document.getElementById('result').style.display = 'none';
+            const hedged = bestDense < CONFIG.confidentAt;
+            let answer = '';
 
             try {
-                // Load the text file and create chunks
-                const text = await loadTextFile('bio.txt');
-                if (!text) {
-                    throw new Error('Failed to load text file.');
-                }
-
-                const chunks = chunkText(text);
-
-                // Create the feature-extraction pipeline
-                const extractor = await pipeline('feature-extraction', 'Xenova/gte-small');
-                console.log('Pipeline created');
-
-                // Find the chunk with the highest similarity
-                const bestChunk = await findBestMatch(extractor, query, chunks);
-
-                // Display the result (rendered markdown)
-                renderChunk(bestChunk);
-                document.getElementById('result').style.display = 'block';
-                
-            } catch (error) {
-                console.error('Search error:', error);
-                document.getElementById('result-content').textContent = 'Sorry, I encountered an error while searching. Please try again.';
-                document.getElementById('result').style.display = 'block';
-            } finally {
-                document.getElementById('loading').style.display = 'none';
+                answer = await generate(query, hits);
+            } catch (genErr) {
+                console.warn('Generation unavailable, composing answer from retrieved text:', genErr);
             }
+
+            // Retrieval already established that the answer is in the context, so
+            // a refusal, an instruction echo or a repetition loop is a generator
+            // failure rather than a real response. chooseAnswer decides between
+            // the model's prose, sentences lifted verbatim from the bio, and the
+            // section rendered as-is; the visitor never sees a degenerate answer.
+            const chosen = chooseAnswer(query, hits, answer);
+
+            if (chosen.kind === 'markdown') {
+                bubble.className = 'bubble md';
+                bubble.innerHTML = (hedged
+                    ? "<p><em>I'm not certain this is what you meant — closest I have:</em></p>"
+                    : '') + marked.parse(chosen.chunk.markdown);
+                bubble.querySelectorAll('a').forEach((a) => { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+            } else {
+                setAnswer(bubble, chosen.text, hedged);
+            }
+
+            attachSources(msg, hits);
+            STATE.history.push({ query, topic: hits[0].chunk.title });
+            if (STATE.history.length > 6) STATE.history.shift();
+            renderChips();
+        } catch (err) {
+            console.error(err);
+            bubble.innerHTML = '<div class="md"><p>Something went wrong answering that. Please try again.</p></div>';
+        } finally {
+            setBusy(false);
+        }
+    }
+
+    /* ============================================================
+       5. Embedding cache — keyed to bio.txt so edits invalidate it
+       ============================================================ */
+
+    async function signature(text) {
+        const data = new TextEncoder().encode(`${text}|${CONFIG.embedModel}`);
+        const digest = await crypto.subtle.digest('SHA-256', data);
+        return Array.from(new Uint8Array(digest)).slice(0, 12)
+            .map((b) => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    function pack(vectors) {
+        const dim = vectors[0].length;
+        const flat = new Float32Array(vectors.length * dim);
+        vectors.forEach((v, i) => flat.set(v, i * dim));
+        const bytes = new Uint8Array(flat.buffer);
+        let s = '';
+        for (let i = 0; i < bytes.length; i += 0x8000) {
+            s += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+        }
+        return { dim, data: btoa(s) };
+    }
+
+    function unpack({ dim, data }) {
+        const raw = atob(data);
+        const bytes = new Uint8Array(raw.length);
+        for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
+        const flat = new Float32Array(bytes.buffer);
+        const out = [];
+        for (let i = 0; i < flat.length; i += dim) out.push(Array.from(flat.subarray(i, i + dim)));
+        return out;
+    }
+
+    async function embedCorpus(sig) {
+        try {
+            const cached = JSON.parse(localStorage.getItem(CONFIG.cacheKey) || 'null');
+            if (cached && cached.sig === sig) {
+                const vectors = unpack(cached);
+                if (vectors.length === STATE.chunks.length) return vectors;
+            }
+        } catch { /* corrupt cache — just recompute */ }
+
+        const vectors = [];
+        const texts = STATE.chunks.map((c) => c.plain);
+        for (let i = 0; i < texts.length; i += 8) {
+            setStatus(`Indexing bio ${Math.round((i / texts.length) * 100)}%`);
+            vectors.push(...await embed(texts.slice(i, i + 8)));
         }
 
-        // Event listeners
-        document.getElementById('search-button').addEventListener('click', handleSearch);
+        try {
+            localStorage.setItem(CONFIG.cacheKey, JSON.stringify({ sig, ...pack(vectors) }));
+        } catch { /* over quota or private mode — cache is optional */ }
 
-        document.getElementById('test-button').addEventListener('click', async () => {
-            const text = await loadTextFile('bio.txt');
-            if (text) {
-                console.log('Loaded text content:', text.substring(0, 200));
-                alert('✅ Connection test successful! Bio file loaded.');
-            } else {
-                console.error('Failed to load bio.txt');
-                alert('❌ Connection test failed. Please check if bio.txt exists.');
+        return vectors;
+    }
+
+    /* ============================================================
+       6. Boot
+       ============================================================ */
+
+    function progressReporter(label) {
+        return (p) => {
+            if (p.status === 'progress' && p.file && p.file.endsWith('.onnx') && p.total) {
+                setStatus(`${label} ${Math.round((p.loaded / p.total) * 100)}%`);
+            } else if (p.status === 'download') {
+                setStatus(`${label}…`);
             }
-        });
+        };
+    }
 
-        document.getElementById('query-input').addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                handleSearch();
+    async function boot() {
+        try {
+            setStatus('Reading bio…');
+            const res = await fetch('bio.txt', { cache: 'no-cache' });
+            if (!res.ok) throw new Error(`bio.txt returned ${res.status}`);
+            const raw = await res.text();
+
+            STATE.chunks = chunkBio(raw);
+            if (!STATE.chunks.length) throw new Error('No sections parsed from bio.txt');
+            STATE.lexicon = buildLexicon(STATE.chunks.map((c) => c.plain));
+            console.log(`Indexed ${STATE.chunks.length} sections`);
+
+            setStatus('Loading search model…');
+            STATE.embedder = await pipeline('feature-extraction', CONFIG.embedModel, {
+                dtype: 'q8',
+                progress_callback: progressReporter('Search model'),
+            });
+
+            STATE.vectors = await embedCorpus(await signature(raw));
+
+            setStatus('Ready', 'ready');
+            setBusy(false);
+            renderChips();
+
+            addMessage('bot',
+                '<div class="md"><p>Hi — I\'m a small language model running <strong>entirely in your browser</strong>, '
+                + `answering from Sumit Yadav's bio across ${STATE.chunks.length} indexed sections.</p>`
+                + '<p>Ask me anything about his research, papers, experience or projects. '
+                + 'Every answer shows the exact sections it came from.</p></div>');
+
+            // Warm the generator in the background so the first question is fast.
+            // Failure here is not fatal: retrieval already works, and answers
+            // fall back to extracted sentences — so it must not be reported as a
+            // startup failure. Attach a catch immediately so a rejected
+            // genPromise can never surface as an unhandled rejection while it
+            // sits in STATE waiting for the first question.
+            setStatus('Loading answer model…');
+            STATE.genPromise = pipeline('text2text-generation', CONFIG.genModel, {
+                dtype: 'q8',
+                progress_callback: progressReporter('Answer model'),
+            });
+            STATE.genPromise.catch(() => {});
+
+            try {
+                STATE.generator = await STATE.genPromise;
+                setStatus('Ready', 'ready');
+            } catch (genErr) {
+                console.warn('Answer model unavailable — answering from retrieved text only:', genErr);
+                setStatus('Search only', 'ready');
             }
-        });
+        } catch (err) {
+            console.error('Startup failed:', err);
+            setStatus('Failed to load', 'error');
+            addMessage('system',
+                '<div class="md"><p>I couldn\'t start up: ' + String(err.message || err)
+                + '</p><p>If you are opening this file directly, serve it over HTTP instead '
+                + '(<code>python3 -m http.server 3000</code>) — module imports and <code>bio.txt</code> '
+                + 'need a web server.</p></div>');
+        }
+    }
 
-        // Add some interactive effects
-        document.getElementById('query-input').addEventListener('focus', function() {
-            this.parentElement.style.transform = 'scale(1.02)';
-        });
+    /* ---------- Events ---------- */
 
-        document.getElementById('query-input').addEventListener('blur', function() {
-            this.parentElement.style.transform = 'scale(1)';
-        });
+    el.form.addEventListener('submit', (e) => { e.preventDefault(); ask(el.input.value); });
+
+    el.input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); ask(el.input.value); }
+    });
+
+    el.input.addEventListener('input', () => {
+        el.input.style.height = 'auto';
+        el.input.style.height = Math.min(el.input.scrollHeight, 130) + 'px';
+    });
+
+    renderChips();
+    boot();
     </script>
+
     <!-- Chatbot Widget -->
     <script src="https://chatem.the4startups.com/widget/loader.js" data-chatbot-id="hkg7jids26nsc0snx4yjr0zv" data-api-key="ce_live_40d4b2e157039711a3cf699b7a6f4c4b6ce7f72cbb0b11a2"></script>
 </body>

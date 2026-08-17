@@ -1,32 +1,36 @@
 # **Sumit Yadav** (aka rockerritesh)
 
+## 🪪 **Identity & Contact**
+
+**Name:** Sumit Yadav (also known online as **rockerritesh**)
 **Role:** AI Safety & Mechanistic Interpretability Researcher
-**Email:** [rockerritesh4@gmail.com](mailto:rockerritesh4@gmail.com)
-**Portfolio:** [https://sumityadav.com.np](https://sumityadav.com.np)
-**Mobile:** +977-9819856148
+**Currently:** AI Researcher (Safety & Agentic Systems) at **Astha.ai**
+**Affiliation:** Computer Engineering graduate, Pulchowk Campus, Tribhuvan University, Nepal
 **Location:** Kathmandu, Nepal
+**Email:** [rockerritesh4@gmail.com](mailto:rockerritesh4@gmail.com) · [076bct088.sumit@pcampus.edu.np](mailto:076bct088.sumit@pcampus.edu.np)
+**Mobile:** +977-9819856148
+**Portfolio:** [sumityadav.com.np](https://sumityadav.com.np)
 **Google Scholar:** [scholar.google.com/citations?user=ag74ytsAAAAJ](https://scholar.google.com/citations?user=ag74ytsAAAAJ&hl=en)
 **GitHub:** [github.com/rockerritesh](https://github.com/rockerritesh)
-**LinkedIn:** [linkedin.com/in/rockerritesh](https://linkedin.com/in/rockerritesh)
+**LinkedIn:** [linkedin.com/in/rockerritesh](https://www.linkedin.com/in/rockerritesh/)
 **Hugging Face:** [huggingface.co/rockerritesh](https://huggingface.co/rockerritesh)
 **X (Twitter):** [x.com/rocker_ritesh](https://x.com/rocker_ritesh)
 **YouTube:** [Audio Obsession](https://www.youtube.com/@Audio-Obsession)
+**Résumé / CV:** [Résumé (4-page)](https://sumityadav.com.np/resume.pdf) · [CV (2-page, academic)](https://sumityadav.com.np/cv.pdf)
 
----
+## 🧠 **About Me**
 
-## 🧠 **Professional Summary**
+Hello! Sumit Yadav is an AI researcher working on the **interpretability and safety of language models**, and on bringing language technology to **Maithili** and other under-served languages. He works on AI safety and agentic systems at [Astha.ai](https://astha.ai), writes on his site, and posts short explainers on [YouTube (Audio Obsession)](https://www.youtube.com/@Audio-Obsession).
 
-Sumit Yadav is an AI researcher working at the intersection of **mechanistic interpretability, AI safety/alignment, and low-resource NLP**, with 5+ years of experience building production-grade AI systems.
+He has 5+ years of experience building production-grade AI systems. His research studies how safety-aligned LLMs fail silently — through over-refusals, geometric misrepresentation, and surface-level triggers — and how the internal structure of representations can be understood and steered to make models safer and more reliable. That work was accepted at **ACL 2026 (Main Conference, CORE A\*)**. He is also the creator of **maiBERT**, the first BERT for Maithili.
 
-His research studies how safety-aligned LLMs fail silently — through over-refusals, geometric misrepresentation, and surface-level triggers — and how the internal structure of representations can be understood and steered to make models safer and more reliable. This work has been accepted at **ACL 2026 (Main, CORE A\*)**. He also works on bringing language technology to **Maithili** and other under-served languages (creator of **maiBERT**, the first BERT for Maithili).
+Alongside research, he designs secure, scalable AI infrastructure: **Zero-Trust** oversight for autonomous agents, **RAG** pipelines, self-hosted LLM serving, and security tooling for the **Model Context Protocol (MCP)**. He is an active Kaggle competitor and an open-source contributor.
 
-Alongside research, he designs secure, scalable AI infrastructure: **Zero-Trust** oversight for autonomous agents, **RAG** pipelines, self-hosted LLM serving, and security tooling for the **Model Context Protocol (MCP)**. He works on AI safety and agentic systems at **Astha.ai**, writes at sumityadav.com.np, and posts short explainers on YouTube (Audio Obsession).
+**Tagline:** AI Researcher — interpretability, AI safety, and low-resource NLP.
 
-He is a Computer Engineering graduate of Pulchowk Campus, Tribhuvan University, an active Kaggle competitor, and an open-source contributor.
+## ⚙️ **Core Competencies & Research Interests**
 
----
-
-## ⚙️ **Core Competencies**
+Sumit's core research and engineering competencies:
 
 - Mechanistic interpretability, representation & activation steering, linear probes / CKA, representation geometry, effective dimension
 - AI safety & alignment: over-refusal mitigation, adversarial probing, robustness
@@ -35,7 +39,18 @@ He is a Computer Engineering graduate of Pulchowk Campus, Tribhuvan University, 
 - LLM evaluation frameworks (LLM-as-a-Judge), guardrails
 - Multi-agent system design, technical writing & research, team leadership
 
----
+## 💻 **Technical Skills**
+
+Sumit's technical toolkit:
+
+**Languages:** Python (expert), C, C++, SQL, Bash, JavaScript
+**Interpretability / ML:** PyTorch, TensorFlow, nnsight, linear probes, CKA
+**LLM / NLP:** LLMs (Llama, Claude, GPT-4o), LangChain, LlamaIndex, vLLM, PEFT/LoRA, RAG
+**Computer Vision & Audio:** YOLOv8, DINOv2/v3, CLIP, SigLIP, SAM/SAM2, Qwen-VL, Perch, Mamba hybrids
+**Agentic & Security:** Model Context Protocol (MCP), MITRE ATT&CK, prompt-injection defense, Zero-Trust
+**Cloud / Tools:** Docker, Kubernetes, CI/CD (GitHub Actions), FastAPI, Streamlit
+**Databases:** MySQL, PostgreSQL, vector DBs (Qdrant, ChromaDB)
+**Soft Skills:** Leadership, writing, public speaking, event management
 
 ## 🎓 **Education**
 
@@ -44,32 +59,22 @@ _Bachelor of Computer Engineering (2019 – 2024)_
 
 **B.E. Thesis:** "Evaluating Auto-Encoding Transformer Language Models for Maithili Text Classification" — his first Maithili masked language model and the foundation for maiBERT.
 
-**Relevant Coursework:** Artificial Intelligence, Data Structures & Algorithms, Distributed Systems, Big Data Technologies, Network Security, Compiler Design, Databases.
+**Relevant coursework:** Artificial Intelligence, Data Structures & Algorithms, Distributed Systems, Big Data Technologies, Network Security, Compiler Design, Databases.
 
----
+**Certificates:** [Deep Learning Specialization — DeepLearning.AI](https://www.coursera.org/account/accomplishments/specialization/BREAETYAGNP3) · [GANs Specialization — DeepLearning.AI](https://www.coursera.org/account/accomplishments/specialization/VAG74ZCZZB7Q)
 
-## 💻 **Technical Skills**
-
-**Languages:** Python (expert), C, C++, SQL, Bash, JavaScript
-**Interpretability/ML:** PyTorch, TensorFlow, nnsight, linear probes, CKA
-**LLM/NLP:** LLMs (Llama, Claude, GPT-4o), LangChain, LlamaIndex, vLLM, PEFT/LoRA, RAG
-**Computer Vision & Audio:** YOLOv8, DINOv2/v3, CLIP, SigLIP, SAM/SAM2, Qwen-VL, Perch, Mamba hybrids
-**Agentic & Security:** Model Context Protocol (MCP), MITRE ATT&CK, prompt-injection defense, Zero-Trust
-**Cloud/Tools:** Docker, Kubernetes, CI/CD (GitHub Actions), FastAPI, Streamlit
-**Databases:** MySQL, PostgreSQL, vector DBs (Qdrant, ChromaDB)
-**Soft Skills:** Leadership, Writing, Public Speaking, Event Management
-**Hobbies:** Walking, Meditation, Deep Thinking, Photography
-
----
-
-## 🧩 **Professional Experience**
+## 🧩 **Professional Experience — Astha.ai (current job)**
 
 ### **Astha.ai — AI Researcher (Safety & Agentic Systems)** · Remote, USA · May 2025 – Present
+
+This is Sumit's current role. He works on AI safety and agentic systems:
 
 - **Zero-Trust agentic oversight:** architected a framework where every agent interaction, tool call, and memory retrieval carries a cryptographic identity and is verified against a strict policy engine.
 - **MCP security proxy:** built the core MCP-Proxy on a Hexagonal (Ports & Adapters) architecture with role-based access control (RBAC), rate-limiting, and audit logging.
 - **MCP-Scanner:** led an AI-powered vulnerability platform for MCP servers with 78+ MITRE ATT&CK-mapped attack techniques and real-time detection (prompt injection, tool poisoning).
 - Contributed to the **SAFE-MCP** community security framework and integrated Anthropic's Claude for intelligent security analysis (dual-defense: SAFE-T1102, SAFE-M-1).
+
+## 🧩 **Professional Experience — Previous Roles**
 
 ### **AMNIL Technologies — AI Engineer (RAG & Infrastructure)** · Lalitpur, Nepal · Jun 2024 – May 2025
 
@@ -87,17 +92,34 @@ _Bachelor of Computer Engineering (2019 – 2024)_
 
 - Technical mentor for the Generative Adversarial Networks (GANs) Specialization — loss functions, training stability, and architectures (DCGAN, CycleGAN, VAE, CGAN, ACGAN) — supporting learners worldwide.
 
----
+## 🗓️ **Career Timeline**
 
-## 🚀 **Major Projects**
+A year-by-year view of Sumit's path:
+
+- **2019** — Began B.E. Computer Engineering at Pulchowk Campus; started learning AI/ML.
+- **2020** — First project: the IRB image-recognition robotic arm; completed the Deep Learning Specialization (DeepLearning.AI).
+- **2021** — GANs Specialization and became a DeepLearning.AI GAN mentor; won the LogPoint CTF.
+- **2022** — DELTA 3.0 and IT-Meet computer-vision wins.
+- **2023** — Machine learning for Tirhuta Lipi; GritFeat AI Hackathon win.
+- **2024** — AI Engineer at AMNIL; banknote-security paper published.
+- **2025** — Began AI safety and agentic-systems research at Astha.ai.
+- **2026** — ACL Main Conference paper, GLOW @ IJCAI, maiBERT; graduated in Computer Engineering.
+
+## 🚀 **Major Projects — Language Technology for Maithili**
 
 ### **maiBERT**
 - The first monolingual **BERT for Maithili** (~50M speakers), pre-trained with masked language modeling; 87.02% news-classification accuracy. Open-sourced on Hugging Face with a live demo.
 - **Tech:** BERT, PyTorch, Streamlit. [Model](https://huggingface.co/rockerritesh/maiBERT_TF) · [Demo](https://maithili.streamlit.app/)
 
-### **Maithili Speech (ASR & TTS)**
-- **Whisper-tiny Maithili** — open Maithili speech-to-text (Whisper-tiny fine-tuned on the IISc SYSPIN corpus, 63.9% WER).
-- **MMS-TTS Maithili** — Maithili text-to-speech (VITS / Meta MMS-TTS on a SYSPIN male voice). Both have live HF Spaces demos.
+### **Whisper-tiny Maithili (ASR)**
+- Open Maithili speech-to-text — OpenAI Whisper-tiny fine-tuned on the IISc SYSPIN corpus, 63.9% WER.
+- [Model](https://huggingface.co/rockerritesh/whisper-tiny-maithili) · [Live demo](https://huggingface.co/spaces/rockerritesh/maithili-asr)
+
+### **MMS-TTS Maithili (TTS)**
+- Maithili text-to-speech — VITS / Meta MMS-TTS fine-tuned on a SYSPIN male voice.
+- [Model](https://huggingface.co/rockerritesh/mms-tts-mai-syspin-male) · [Live demo](https://huggingface.co/spaces/rockerritesh/maithili-tts)
+
+## 🚀 **Major Projects — AI Security & Agentic Systems**
 
 ### **SAFE-MCP / SAF-MCP Security Framework**
 - Contributed detection techniques and mitigations to a community security framework for the Model Context Protocol — an ATT&CK-style catalogue of agentic-system threats and defenses (e.g., SAFE-T1601, SAFE-T1703, SAFE-T1110).
@@ -107,13 +129,15 @@ _Bachelor of Computer Engineering (2019 – 2024)_
 - A Zero-Trust protocol for AI agents: identity, policy, mTLS, and audit (Python SDK + Go server). [GitHub](https://github.com/rockerritesh/agentguard)
 
 ### **spiffe-core · TraT**
-- SPIFFE-based agent identity/attestation and Transaction Tokens (TraT) for secure multi-agent workflows.
+- SPIFFE-based agent identity/attestation and Transaction Tokens (TraT) for secure multi-agent workflows. [spiffe-core](https://github.com/rockerritesh/spiffe-core) · [TraT](https://github.com/rockerritesh/trat-multi-agent)
 
 ### **sumit-mcp-server**
-- A federated-memory MCP server (live on Hugging Face Spaces).
+- A federated-memory MCP server, live on Hugging Face Spaces. [GitHub](https://github.com/rockerritesh/sumit-mcp-server) · [Live demo](https://huggingface.co/spaces/rockerritesh/sumit-server)
+
+## 🚀 **Major Projects — Applied AI & Computer Vision**
 
 ### **Vibe-Coder**
-- An AI agent that auto-generates **Streamlit** and **FastAPI** apps. **Tech:** MCP, Claude API, Python.
+- An AI agent that auto-generates **Streamlit** and **FastAPI** apps. **Tech:** MCP, Claude API, Python. [GitHub](https://github.com/rockerritesh/vibe_coder)
 
 ### **Nepali Chat with Doc**
 - Multilingual RAG chatbot supporting **Devanagari** and legacy **Preeti** fonts, with guardrails, post-conversation analysis, and reflexive self-correcting agents.
@@ -122,53 +146,72 @@ _Bachelor of Computer Engineering (2019 – 2024)_
 - Counterfeit Nepali banknote detection with 0.82 (front) and 0.9863 (back) true-positive recall. **Tech:** YOLOv8.
 
 ### **IRB Robotics Arm**
-- An image-recognition-based robotic arm for touchless medical assistance (UN SDG3). **Tech:** Python, Arduino, TensorFlow.
+- An open-source image-recognition-based robotic arm for touchless medical assistance (UN SDG3). **Tech:** Python, Arduino, TensorFlow. [GitHub](https://github.com/jarp0l/IRB-Robo-Arm)
 
----
-
-## 📚 **Publications**
+## 📚 **Publications — Interpretability & AI Safety**
 
 ### **SafeConstellations: Mitigating Over-Refusals in LLMs Through Task-Aware Representation Steering** — ACL 2026 (Main Conference, CORE A\*)
-- With Utsav Maskey, Mark Dras, Usman Naseem. LLM representations follow distinct per-task "constellation" trajectories in embedding space; SafeConstellations is an inference-time method that selectively steers over-refusal-prone tasks toward non-refusal pathways — **cutting over-refusals by up to 73%** with minimal utility loss and no retraining.
-- [ACL Anthology](https://aclanthology.org/2026.acl-long.2056/) · [arXiv:2508.11290](https://arxiv.org/abs/2508.11290)
+- **Authors:** Utsav Maskey, Sumit Yadav, Mark Dras, Usman Naseem.
+- **Venue:** Proceedings of the 64th Annual Meeting of the ACL, Vol. 1: Long Papers, pp. 44424–44440. San Diego, USA.
+- **TL;DR:** Steering only over-refusal-prone tasks in representation space cuts LLM over-refusals by up to 73% — no retraining, minimal utility loss.
+- LLM representations follow distinct per-task "constellation" trajectories in embedding space; SafeConstellations is an inference-time method that selectively steers only over-refusal-prone tasks toward non-refusal pathways.
+- [ACL Anthology](https://aclanthology.org/2026.acl-long.2056/) · [arXiv:2508.11290](https://arxiv.org/abs/2508.11290) · [DOI](https://doi.org/10.18653/v1/2026.acl-long.2056)
 
 ### **On the Relationship Between Representation Geometry and Generalization in Deep Neural Networks** — Preprint, 2026 (sole author)
-- **Effective dimension**, an unsupervised label-free geometric metric, predicts generalization across vision and language: partial r = 0.75 over 52 ImageNet classifiers (13 architectures), generalizing to NLP encoders and decoder-only LLMs. The link is causal — degrading geometry hurts accuracy while PCA cleanup preserves it.
-- [arXiv:2602.00130](https://arxiv.org/abs/2602.00130)
+- **TL;DR:** A label-free geometric metric — effective dimension — predicts, and causally drives, generalization across vision and language models.
+- **Effective dimension**, an unsupervised label-free geometric metric, predicts generalization across domains: partial r = 0.75 over 52 ImageNet classifiers (13 architecture families), replicating on CIFAR-10 and generalizing to NLP (8 encoders on SST-2/MNLI, 15 decoder-only LLMs on AG News). Establishes bidirectional causality — degrading geometry with noise drops accuracy (r = −0.94), while PCA that improves geometry preserves it.
+- [arXiv:2602.00130](https://arxiv.org/abs/2602.00130) · [DOI](https://doi.org/10.48550/arXiv.2602.00130)
 
-### **Geometric Phases of Mechanism Formation in Neural Networks** — GLOW 2026 @ IJCAI (Poster; sole author)
-- Using linear probes and CKA across dense training checkpoints, shows classification mechanisms form **output-layer-first** within the first ~5% of training (Cohen's d = 3.68). The deep-first pattern holds in from-scratch LLM pretraining (GPT-2 Small, SmolLM2-135M) and reproduces on public Pythia and OLMo-2 checkpoints.
-- [ResearchGate](https://www.researchgate.net/publication/408634954_Geometric_Phases_of_Mechanism_Formation_in_Neural_Networks)
+### **Geometric Phases of Mechanism Formation in Neural Networks** — GLOW 2026 @ IJCAI-ECAI (**Best Paper Candidate**; sole author)
+- **TL;DR:** Neural-network classification mechanisms form output-layer-first, within the first ~5% of training — from small models up to LLM pretraining.
+- Using linear probes and centered kernel alignment (CKA) across dense training checkpoints, finds that classification mechanisms form output-layer-first and within the first ~5% of training: output layers reach >70% probe accuracy by epoch 5 while input layers stay below 50% (Cohen's d = 3.68). The same deep-first pattern holds in the first ~200M tokens of from-scratch LLM pretraining (GPT-2 Small, SmolLM2-135M) and reproduces on public Pythia / OLMo-2 checkpoints — and isn't explained by gradient magnitude.
+- [Preprint (ResearchGate)](https://www.researchgate.net/publication/408634954_Geometric_Phases_of_Mechanism_Formation_in_Neural_Networks) · [DOI](https://doi.org/10.13140/RG.2.2.35227.84005)
 
-### **MaiBERT: A Pre-training Corpus and Language Model for Low-Resourced Maithili** — LoResLM @ ACL 2026
-- With Raju Kumar Yadav, Utsav Maskey, Gautam Siddharth Kashyap, Ganesh Gautam, Usman Naseem. The first monolingual BERT for Maithili, reaching **87.02% accuracy** on news classification — outperforming NepBERTa and HindiBERT — and open-sourced. (Earlier preprint: "Can maiBERT Speak for Maithili?")
+## 📚 **Publications — Low-Resource NLP & Maithili**
+
+### **MaiBERT: A Pre-training Corpus and Language Model for Low-Resourced Maithili Language** — LoResLM @ ACL 2026
+- **Authors:** Sumit Yadav, Raju Kumar Yadav, Utsav Maskey, Gautam Siddharth Kashyap, Ganesh Gautam, Usman Naseem.
+- **Venue:** LoResLM @ ACL 2026 (pp. 444–452), Rabat, Morocco.
+- **TL;DR:** The first BERT for Maithili (~50M speakers), reaching 87% news-classification accuracy and beating multilingual baselines like MuRIL and NepBERTa.
+- Pre-trained with masked language modeling on a newly constructed Maithili corpus. Reaches 87.02% accuracy on news classification — outperforming regional models NepBERTa and HindiBERT with 5–7% gains across classes — and is open-sourced for downstream tasks like sentiment analysis and NER. (Earlier preprint: "Can maiBERT Speak for Maithili?")
 - [ACL Anthology](https://aclanthology.org/2026.loreslm-1.38/) · [arXiv:2509.15048](https://arxiv.org/abs/2509.15048) · [Model](https://huggingface.co/rockerritesh/maiBERT_TF)
 
+### **Evaluating Auto-Encoding Transformer Language Models for Maithili Text Classification** — B.E. Thesis, Tribhuvan University, 2024
+- **Authors:** Sumit Yadav, Raju Kumar Yadav.
+- **TL;DR:** A Maithili masked language model built via transfer learning — the precursor work to maiBERT.
+- Builds a Maithili masked language model via transfer learning and fine-tunes it on a curated Maithili news classification dataset, addressing the absence of dedicated language models and task-specific data for Maithili.
+- [Thesis (ResearchGate)](https://www.researchgate.net/publication/407471788_EVALUATING_AUTO-ENCODING_TRANSFORMER_LANGUAGE_MODELS_FOR_MAITHILI_TEXT_CLASSIFICATION)
+
+### **Machine Learning Analysis of Tirhuta Lipi** — Technical Report, Tribhuvan University, 2023
+- **Authors:** Sumit Yadav, Raju Kumar Yadav.
+- **TL;DR:** Character recognition for the endangered Tirhuta script at 97% accuracy, enabling OCR for Maithili.
+- Character recognition for the Tirhuta (Mithilakshar) script — MobileNet embeddings with logistic regression reach 0.97 accuracy, enabling OCR and translation for a low-resource script.
+- [ResearchGate](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi) · [DOI](https://doi.org/10.13140/RG.2.2.15213.97765)
+
+## 📚 **Publications — Vision & Text Classification**
+
 ### **Revolutionizing Currency Security: A YOLOv8-Based Approach for Detecting Counterfeit Nepali Banknotes** — J. Bus. Econ. Stud., 2024
-- YOLOv8 for counterfeit Nepali banknote detection; true-positive recall up to 0.9863 on the back face, adaptable across hardware.
+- **TL;DR:** A YOLOv8 detector for counterfeit Nepali banknotes, reaching 0.986 true-positive recall on the note's back face.
+- Classifies Nepalese banknotes as genuine or counterfeit to help curb financial fraud. On 180 samples of the 1000-rupee note, YOLOv8 reaches a true-positive recall of 0.82 on the front face and 0.9863 on the back, with strong mAP — and the approach is adaptable across hardware platforms.
 - [DOI](https://doi.org/10.61440/JBES.2024.v1.47)
 
-### **Machine Learning Analysis of Tirhuta Lipi** — Technical Report, 2023
-- Character recognition for the Tirhuta (Mithilakshar) script — MobileNet embeddings + logistic regression reach **97% accuracy**, enabling OCR for a low-resource script.
-- [ResearchGate](https://www.researchgate.net/publication/373370042_Machine_Learning_Analysis_of_Tirhuta_Lipi)
-
 ### **Support Vectors Are a Better Way of Text Classification for Imbalanced Data** — 2023
-- A TF-IDF + n-gram support-vector pipeline that outperforms neural baselines on 100+ imbalanced classes, with incremental retraining.
+- **TL;DR:** For 100+ imbalanced text classes, a TF-IDF support-vector pipeline beats neural baselines and retrains incrementally.
+- A TF-IDF + n-gram support-vector pipeline for text classification across 100+ classes on highly imbalanced data. It outperforms neural baselines on the test set and supports incremental retraining as users supply fresh data. Consolidates the team's 1st Runner-Up submissions at Docsumo DataRush (LOCUS 2021) and DataVerse (LOCUS 2023).
 - [ResearchGate](https://www.researchgate.net/publication/371514138_SUPPORT_VECTORS_ARE_A_BETTER_WAY_OF_TEXT_CLASSIFICATION_FOR_IMBALANCED_DATA)
-
----
 
 ## 🏆 **Honors & Awards**
 
+Awards and recognition Sumit has received:
+
+- 🥇 **Best Paper Candidate — GLOW @ IJCAI-ECAI 2026.** Sole-authored paper "Geometric Phases of Mechanism Formation in Neural Networks" selected as a Best Paper Candidate (anonymous expert evaluation on quality, novelty, and contribution).
 - 🎖️ **Outstanding Reviewer — Mechanistic Interpretability Workshop, ICML 2026.** Recognized for high-quality, timely peer reviews.
 - 🥇 **Winner — GritFeat AI Hackathon 2023 (LOCUS).** SWIFT: wearable LSTM fall-detection for the elderly (79.86%).
 - 🥈 **1st Runner-Up — Docsumo DataVerse, LOCUS 2023.** Team Deep Learners — NLP classification of imbalanced research-paper abstracts.
-- 🥈 **1st Runner-Up — Docsumo DataRush, LOCUS 2021.** Abstract classification into 158 classes (SVC + TF-IDF).
+- 🥈 **1st Runner-Up — Docsumo DataRush, LOCUS 2021.** Team Deep Learners — abstract classification into 158 classes (SVC + TF-IDF).
 - 🏆 **Best AI Project — DELTA 3.0 (2022).** Nepali Harvest — crop-disease prediction & harvest timing.
 - 🥇 **Winner — IT-Meet Image Challenge (2022).** Computer-vision classification of Nepali ballot-paper images.
 - 🥇 **Winner — LogPoint Capture The Flag (2021).** Binary exploitation & forensics.
-
----
 
 ## 🌍 **Community & Social Contributions**
 
@@ -178,17 +221,41 @@ _Bachelor of Computer Engineering (2019 – 2024)_
 - **Robotics Association of Nepal:** AI & robotics member — computer vision and Raspberry Pi–based systems.
 - Former **Joint Secretary, NTBNS Club (Pulchowk Campus)** and digital-literacy tutor with Children In Technology (WorldLink Nepal).
 
----
+## ✍️ **Writing, Talks & Blog**
 
-## 💬 **Personal Philosophy**
+Sumit writes essays and technical explainers on his site, covering:
+
+- **AI & ML** — applied machine learning and engineering write-ups
+- **Interpretability & Safety** — the core of his research writing
+- **Engineering** — systems, infrastructure, and tooling
+- **Mathematics** — foundations and derivations
+- **Culture & Mithila** — Maithili language, Tirhuta script, and Mithila culture
+- **Reflections** — essays and personal reflections
+
+He also runs the **[Audio Obsession](https://www.youtube.com/@Audio-Obsession)** YouTube channel with short AI and mathematics explainers, and has written a technical deep-dive on [Tensor Processing Units (TPUs)](https://sumityadav.com.np/TPUs-2.pdf).
+
+## 📂 **Documents, Notes & Resources**
+
+Public documents and resources Sumit maintains:
+
+- [Curriculum Vitae (2-page, academic)](https://sumityadav.com.np/cv.pdf) · [Résumé (4-page, work-focused)](https://sumityadav.com.np/resume.pdf)
+- [Tensor Processing Units — technical deep-dive (PDF)](https://sumityadav.com.np/TPUs-2.pdf)
+- [Study materials — notes & references](https://sumityadav.com.np/study/)
+- [Photography gallery](https://sumityadav.com.np/photography/)
+- [Drum Machine — interactive toy](https://sumityadav.com.np/drum/)
+- [Hugging Face models](https://huggingface.co/rockerritesh)
+
+**Lecture & lab notes:** Singular Value Decomposition, Data Insights, Artificial Neural Networks, Genetic Algorithms, Constraint Programming, Propositional Logic, UNIX & Shell Programming, and CT/DT Functions — all available under [sumityadav.com.np/files/](https://sumityadav.com.np/files/).
+
+## 💬 **Personal Philosophy, Hobbies & Interests**
+
+What Sumit cares about outside of the résumé:
 
 - **Ethical AI:** building responsible, interpretable AI with strong guardrails and user trust.
 - **For under-served languages:** bringing modern NLP to Maithili and other low-resource languages.
 - **Mindfulness & reflection:** daily walking and meditation for creative focus.
 - **Continuous learning:** staying at the frontier of interpretability and AI-safety research.
 
----
+**Hobbies:** walking, meditation, deep thinking, and photography.
 
-**"Building safe, interpretable AI — and bringing it to the languages that need it most."**
-
-[🔗 Download Résumé (4-page)](https://sumityadav.com.np/resume.pdf) · [📄 CV (2-page, academic)](https://sumityadav.com.np/cv.pdf)
+**Motto:** _"Building safe, interpretable AI — and bringing it to the languages that need it most."_

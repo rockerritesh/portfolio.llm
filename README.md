@@ -1,246 +1,198 @@
-# portfolio.llm
-web3.0 Portfolio
+# 💬 Ask Sumit Yadav — an in-browser RAG chatbot
 
-# 🚀 AI-Powered Semantic Search Portfolio
+A retrieval-augmented chat interface that answers questions about Sumit Yadav's
+research, experience and projects. Both models run **entirely in the visitor's
+browser** — no server, no API keys, no telemetry. Live at
+**[llm.sumityadav.com.np](https://llm.sumityadav.com.np)**.
 
-An intelligent, modern web application that allows visitors to search through personal information using advanced AI semantic search technology. Built with cutting-edge web technologies and featuring a stunning glassmorphism UI design.
+![Status](https://img.shields.io/badge/Status-Live-brightgreen)
+![Runs](https://img.shields.io/badge/Inference-100%25%20client--side-blue)
+![Models](https://img.shields.io/badge/Models-ONNX%20%C2%B7%20129%20MB-purple)
 
-![Portfolio Demo](https://img.shields.io/badge/Status-Live-brightgreen)
-![AI Powered](https://img.shields.io/badge/AI-Powered-blue)
-![Modern UI](https://img.shields.io/badge/UI-Glassmorphism-purple)
-
-## ✨ Features
-
-### 🧠 **AI-Powered Search**
-- **Semantic Understanding**: Uses transformer models to understand the meaning behind queries
-- **Intelligent Matching**: Finds relevant information based on context, not just keywords
-- **Real-time Processing**: Instant search results with modern ML models
-- **Natural Language Queries**: Ask questions in plain English
-
-### 🎨 **Modern UI/UX**
-- **Glassmorphism Design**: Contemporary frosted glass effects with backdrop blur
-- **Animated Gradients**: Dynamic, flowing background animations
-- **Floating Particles**: Subtle interactive visual elements
-- **Smooth Transitions**: Micro-animations throughout the interface
-- **Responsive Design**: Perfect experience across all devices
-
-### 🔧 **Technical Excellence**
-- **Client-Side AI**: Runs entirely in the browser using Transformers.js
-- **No Server Required**: Pure frontend implementation
-- **Fast Loading**: Optimized for performance
-- **Modern JavaScript**: ES6+ modules and async/await patterns
-
-## 🛠️ Technology Stack
-
-### **Frontend**
-- **HTML5**: Semantic markup and modern web standards
-- **CSS3**: Advanced styling with animations, gradients, and glassmorphism
-- **Vanilla JavaScript**: ES6+ modules for clean, maintainable code
-
-### **AI/ML**
-- **Transformers.js**: Hugging Face transformers for the browser
-- **GTE-Small Model**: General Text Embeddings for semantic search
-- **Cosine Similarity**: Mathematical similarity computation
-- **Feature Extraction Pipeline**: Text-to-vector conversion
-
-### **Design**
-- **Glassmorphism**: Modern design trend with frosted glass effects
-- **Gradient Animations**: CSS keyframe animations
-- **Responsive Grid**: Flexible layouts for all screen sizes
-- **Inter Font**: Modern, readable typography
-
-## 📁 Project Structure
-
-```
-portfolio-semantic-search/
-├── index.html              # Main application file
-├── bio.txt                 # Personal information database
-├── README.md              # Project documentation
-└── assets/                # (Optional) Additional resources
-    ├── images/
-    └── fonts/
-```
-
-## 🚀 Quick Start
-
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/yourusername/ai-portfolio-search.git
-cd ai-portfolio-search
-```
-
-### **2. Prepare Your Content**
-Create a `bio.txt` file with your personal information, using `##` as section separators:
-
-```text
-## About Me
-I'm a passionate developer with expertise in AI and web technologies...
-
-## Skills
-- JavaScript/TypeScript
-- Python
-- Machine Learning
-- Web Development
-
-## Experience
-Software Engineer at TechCorp (2020-2023)
-- Built scalable web applications
-- Implemented AI-powered features
-```
-
-### **3. Serve the Application**
-Since the app uses ES6 modules, you need to serve it through a web server:
-
-#### **Option A: Using Python**
-```bash
-# Python 3
-python -m http.server 3000
-
-# Python 2
-python -m SimpleHTTPServer 3000
-```
-
-#### **Option B: Using Node.js**
-```bash
-npx serve .
-```
-
-#### **Option C: Using VS Code**
-Install the "Live Server" extension and right-click on `index.html` → "Open with Live Server"
-
-### **4. Open in Browser**
-Navigate to `http://localhost:3000` and start searching!
-
-## 📊 How It Works
-
-### **1. Content Processing**
-- Loads biographical data from `bio.txt`
-- Splits content into chunks using `##` delimiters
-- Each chunk represents a searchable section
-
-### **2. AI Processing**
-- Converts user queries into numerical embeddings
-- Transforms each content chunk into embeddings
-- Uses the GTE-Small model for semantic understanding
-
-### **3. Similarity Matching**
-- Computes cosine similarity between query and content embeddings
-- Finds the most semantically similar content chunk
-- Returns the best matching information
-
-### **4. User Interface**
-- Modern, responsive design with glassmorphism effects
-- Real-time search with loading animations
-- Smooth transitions and micro-interactions
-
-## 🎯 Usage Examples
-
-### **Sample Queries**
-- "What are your technical skills?"
-- "Tell me about your work experience"
-- "What projects have you worked on?"
-- "What is your educational background?"
-- "What programming languages do you know?"
-
-### **Content Structure**
-```text
-## Technical Skills
-JavaScript, Python, React, Node.js, Machine Learning, AI
-
-## Professional Experience
-Senior Developer at InnovateX
-- Led development of AI-powered analytics platform
-- Managed team of 5 developers
-- Implemented microservices architecture
-
-## Education
-Master's in Computer Science
-University of Technology (2018-2020)
-```
-
-## 🔧 Customization
-
-### **Styling**
-Modify the CSS variables in `index.html` to match your brand:
-
-```css
-:root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --accent-color: #a855f7;
-    --text-color: #ffffff;
-}
-```
-
-### **AI Model**
-Change the transformer model by modifying the pipeline initialization:
-
-```javascript
-const extractor = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
-```
-
-### **Content Format**
-Customize the chunk delimiter by changing the split character:
-
-```javascript
-const chunks = text.split('---').map(chunk => chunk.trim());
-```
-
-## 📱 Browser Support
-
-- **Chrome**: 88+ ✅
-- **Firefox**: 87+ ✅
-- **Safari**: 14+ ✅
-- **Edge**: 88+ ✅
-
-*Note: Requires modern browsers with ES6 module support*
-
-## 🔒 Privacy & Security
-
-- **Client-Side Processing**: All AI processing happens in the browser
-- **No Data Transmission**: Personal information never leaves the user's device
-- **No External APIs**: Completely self-contained application
-- **No Tracking**: No analytics or tracking scripts
-
-## 🚀 Performance
-
-- **Model Size**: ~25MB (cached after first load)
-- **Loading Time**: 2-5 seconds on first visit
-- **Search Speed**: < 1 second for most queries
-- **Memory Usage**: ~100MB peak during processing
-
-## 🔄 Updates & Maintenance
-
-### **Adding New Content**
-1. Update `bio.txt` with new sections
-2. Use `##` to separate different topics
-3. Refresh the page to reload content
-
-### **Updating the UI**
-- Modify CSS in the `<style>` section
-- Add new animations or effects
-- Customize colors and typography
-
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Hugging Face**: For the amazing Transformers.js library
-- **Xenova**: For the browser-optimized ML models
-- **Design Community**: For glassmorphism and modern UI inspiration
-
-## 📞 Contact & Support
-
-- **Portfolio**: [Sumit Yadav](https://llm.sumityadav.com.np)
-- **Email**: rockerritesh@gmail.com
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/rockerritesh)
-- **GitHub**: [Your GitHub](https://github.com/rockerritesh)
+Ask it *"what does he do at Astha.ai?"*, *"tell me more"*, *"what awards has he
+won?"* — it answers in prose and shows the exact bio sections each answer came
+from.
 
 ---
 
-**Made with ❤️ and AI by Sumit Yadav**
+## How it works
 
-*Showcasing the future of interactive portfolios with semantic search technology*
+```
+bio.txt
+  │  heading-aware chunking (36 sections)
+  ▼
+┌─────────────────────────────┐        ┌──────────────────────────────┐
+│ Dense retrieval             │        │ Lexical retrieval            │
+│ gte-small embeddings        │   +    │ BM25 + light stemming        │
+│ (cosine over 384-dim)       │        │ + query-vocabulary bridging  │
+└──────────────┬──────────────┘        └──────────────┬───────────────┘
+               └────────── reciprocal rank fusion ────┘
+                                  │  top 3 sections
+                                  ▼
+                    relevance gate (decline / hedge / answer)
+                                  │
+                                  ▼
+                   LaMini-Flan-T5-77M composes an answer
+                                  │
+                                  ▼
+                   quality gate → extractive fallback
+                                  │
+                                  ▼
+                      answer + "from N sections" citations
+```
+
+### Retrieval
+
+Single-vector nearest-neighbour search is not enough on a document this small and
+this proper-noun-heavy, so retrieval is **hybrid**:
+
+- **Heading-aware chunking.** `bio.txt` is split on its `##`/`###` structure, and
+  each chunk carries its heading path in its searchable text — a chunk retrieved
+  in isolation still states what it is about, which matters because the generator
+  only ever sees the chunk, never the whole document.
+- **Dense + lexical, fused by rank.** Embeddings catch paraphrase; BM25 catches
+  exact names like *Qdrant*, *SAFE-MCP* or *maiBERT* that embeddings blur.
+  Reciprocal rank fusion combines them, because bounded cosine and unbounded BM25
+  scores are not comparable — only their orderings are.
+- **Query-vocabulary bridging.** Visitors ask *"where does he work"*; the bio says
+  *"Professional Experience"*. A pattern table maps everyday phrasing onto the
+  document's vocabulary so the lexical half actually scores.
+- **Follow-up rewriting.** *"tell me more"* carries no retrievable content, so
+  short elliptical questions inherit the previous turn's topic.
+- **A relevance gate** declines off-topic questions instead of confidently
+  answering from an unrelated section.
+
+### Answer composition, and why there is a fallback
+
+The generator is a 77M-parameter model, which is small enough to be unreliable.
+Its failure modes are specific and recognisable: refusing ("the context does not
+provide…") even though retrieval proved the context *does* contain the answer,
+echoing the prompt instructions back as content, or looping a phrase.
+
+So generated answers are **validated before display**, and anything degenerate is
+replaced by an **extractive answer** — the sentences from the retrieved sections
+that best match the question, stitched in original order. That path cannot
+hallucinate, because every word is copied from `bio.txt`. Structured sections
+(contact details, the skills list) are rendered as themselves, since a contact
+block *is* the answer and paraphrasing it only loses the links.
+
+Because answers are validated, token-by-token streaming is deliberately not used
+— streaming would put text on screen that then has to be retracted.
+
+Every answer shows its sources, so any claim can be checked against the bio.
+
+---
+
+## Models
+
+| Role | Model | Size (int8 ONNX) |
+|---|---|---|
+| Retrieval | [`Xenova/gte-small`](https://huggingface.co/Xenova/gte-small) | ~34 MB |
+| Answer composition | [`Xenova/LaMini-Flan-T5-77M`](https://huggingface.co/Xenova/LaMini-Flan-T5-77M) | ~95 MB (35 encoder + 59 decoder) |
+
+Both are fetched from the Hugging Face CDN and cached by the browser's Cache API,
+so the ~129 MB download is paid once per visitor. Chunk embeddings are cached in
+`localStorage`, keyed by a hash of `bio.txt`, so repeat visits skip re-indexing.
+
+**Why this generator?** It is close to the largest instruction-tuned seq2seq model
+that fits a ~100 MB budget and actually loads under WebAssembly. `fp16` and
+`q4f16` builds — including SmolLM2-135M-Instruct — fail to create an inference
+session in onnxruntime-web, so `int8` is the only working quantization here.
+
+> ⚠️ **The same weights are noticeably weaker in the browser than in Node.**
+> Identical prompts that answer correctly under native ONNX Runtime regularly come
+> back from WebAssembly int8 kernels as refusals or loops. This is measured, not
+> theoretical, and it is why the quality gate and extractive fallback exist. If
+> you benchmark generation quality, benchmark it in a browser (`npm run smoke`) —
+> Node results are optimistic.
+
+---
+
+## Running locally
+
+ES modules and `fetch('bio.txt')` need a web server — opening `index.html`
+directly will not work.
+
+```bash
+npm run serve         # http://localhost:3000
+```
+
+## Tests
+
+Retrieval logic lives in `rag.js`, deliberately dependency-free and DOM-free, so
+the exact code the browser runs can be tested in Node.
+
+```bash
+npm install
+npm test              # retrieval routing, thresholds, answer policy, generation
+```
+
+`npm test` checks that each question still resolves to the section you expect,
+that off-topic questions stay below the relevance floor, that follow-ups inherit
+the right topic while self-contained questions do not, and that degenerate
+generations are rejected. **Run it after editing `bio.txt`.**
+
+For the full page in a real browser:
+
+```bash
+npm run browsers      # one-time: install Chromium
+npm run smoke         # boots the page, asks questions, asserts no bad answers
+```
+
+---
+
+## Updating the content
+
+1. Edit **`bio.txt`**. Use `##` for major sections and `###` for entries within
+   them; the chunker follows that structure, and each `##`/`###` block becomes an
+   independently retrievable section.
+2. Write sections so they stand alone — a chunk is retrieved without its
+   neighbours, so name the subject rather than relying on "he" from three
+   sections earlier.
+3. Run `npm test`. If a question now routes to the wrong section, add the missing
+   vocabulary to `EXPANSIONS` in `rag.js` rather than contorting the prose.
+4. Visitors' cached embeddings invalidate automatically — the cache key is a hash
+   of `bio.txt`.
+
+### Tuning
+
+All knobs live in `CONFIG` at the top of `rag.js`. Two notes:
+
+- `confidentAt` / `weakAt` are **corpus-specific**, measured with `npm test`:
+  on-topic questions score 0.824–0.921 here and clearly off-topic ones 0.732–0.772.
+  Re-measure if you change `embedModel` or substantially rewrite `bio.txt`.
+- `maxContextChars` must leave room inside the T5 encoder's 512-token limit.
+
+---
+
+## Project structure
+
+```
+index.html      chat UI, model loading, embedding cache
+rag.js          retrieval + answer-selection core (pure, testable)
+bio.txt         the knowledge base — the only file you normally edit
+test/           Node test for the retrieval core
+smoke.mjs       headless-browser end-to-end test
+models/         a local copy of gte-small (unused: models load from the CDN)
+```
+
+## Privacy
+
+Questions never leave the browser. There is no backend, no logging and no
+analytics; the only network requests are the one-time model downloads from the
+Hugging Face CDN.
+
+## Browser support
+
+Chrome 88+, Firefox 87+, Safari 14+, Edge 88+ — anything with ES modules and
+WebAssembly. GitHub Pages does not send cross-origin isolation headers, so WASM
+runs single-threaded; the models are small enough that this is fine.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
+
+**Built by [Sumit Yadav](https://sumityadav.com.np)** · retrieval and generation by
+[Transformers.js](https://github.com/huggingface/transformers.js)

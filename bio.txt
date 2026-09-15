@@ -4,7 +4,7 @@
 
 **Name:** Sumit Yadav (also known online as **rockerritesh**)
 **Role:** AI Safety & Mechanistic Interpretability Researcher
-**Currently:** AI Researcher (Safety & Agentic Systems) at **Astha.ai**
+**Currently:** AI Researcher (AI Security & Agentic Systems) at **Astha.ai**
 **Affiliation:** Computer Engineering graduate, Pulchowk Campus, Tribhuvan University, Nepal
 **Location:** Kathmandu, Nepal
 **Email:** [rockerritesh4@gmail.com](mailto:rockerritesh4@gmail.com) · [076bct088.sumit@pcampus.edu.np](mailto:076bct088.sumit@pcampus.edu.np)
@@ -20,7 +20,7 @@
 
 ## 🧠 **About Me**
 
-Hello! Sumit Yadav is an AI researcher working on the **interpretability and safety of language models**, and on bringing language technology to **Maithili** and other under-served languages. He works on AI safety and agentic systems at [Astha.ai](https://astha.ai), writes on his site, and posts short explainers on [YouTube (Audio Obsession)](https://www.youtube.com/@Audio-Obsession).
+Hello! Sumit Yadav is an AI researcher working on the **interpretability and safety of language models**, and on bringing language technology to **Maithili** and other under-served languages. He works on AI security and agentic systems at [Astha.ai](https://astha.ai), writes on his site, and posts short explainers on [YouTube (Audio Obsession)](https://www.youtube.com/@Audio-Obsession).
 
 He has 5+ years of experience building production-grade AI systems. His research studies how safety-aligned LLMs fail silently — through over-refusals, geometric misrepresentation, and surface-level triggers — and how the internal structure of representations can be understood and steered to make models safer and more reliable. That work was accepted at **ACL 2026 (Main Conference, CORE A\*)**. He is also the creator of **maiBERT**, the first BERT for Maithili.
 
@@ -65,14 +65,17 @@ _Bachelor of Computer Engineering (2019 – 2024)_
 
 ## 🧩 **Professional Experience — Astha.ai (current job)**
 
-### **Astha.ai — AI Researcher (Safety & Agentic Systems)** · Remote, USA · May 2025 – Present
+### **Astha.ai — AI Researcher (AI Security & Agentic Systems)** · Remote, USA · May 2025 – Present
 
-This is Sumit's current role. He works on AI safety and agentic systems:
+This is Sumit's current role. He builds four security scanners for a multi-tenant AI security & compliance SaaS, and owns the platform they run on:
 
-- **Zero-Trust agentic oversight:** architected a framework where every agent interaction, tool call, and memory retrieval carries a cryptographic identity and is verified against a strict policy engine.
-- **MCP security proxy:** built the core MCP-Proxy on a Hexagonal (Ports & Adapters) architecture with role-based access control (RBAC), rate-limiting, and audit logging.
-- **MCP-Scanner:** led an AI-powered vulnerability platform for MCP servers with 78+ MITRE ATT&CK-mapped attack techniques and real-time detection (prompt injection, tool poisoning).
-- Contributed to the **SAFE-MCP** community security framework and integrated Anthropic's Claude for intelligent security analysis (dual-defense: SAFE-T1102, SAFE-M-1).
+- **SAFE-MCP scanner (primary author):** the MCP vulnerability scanner that detects attacks on agentic AI systems — tool poisoning, injected tool descriptions and related SAFE-MCP techniques — pairing pattern-based detection with LLM analysis across 78+ MITRE ATT&CK-mapped techniques. He added a statistical analysis mode that makes non-deterministic LLM verdicts reproducible.
+- **LLM-powered code scanner:** hardened the LLM integration layer against prompt injection (canary tokens, untrusted-input escaping, response validation) and built tree-sitter semantic code chunking for stronger context construction, plus observability, caching and quota enforcement. Raised test coverage from 40% to 75% and cleared the strict type-check backlog to zero.
+- **safe-k8s — Kubernetes compliance agent (lead engineer):** a Go service running both inside customer clusters and in the SaaS platform, with authenticated platform communication, metrics, heartbeats and evidence trails. He built cluster-aware scan planning in which an LLM refines scan selection from a catalog of ~470 compliance-control skills, and a repeated-run consensus mechanism with fixed sampling parameters that makes compliance verdicts deterministic.
+- **Cloud compliance agents:** scanners for AWS, GCP and Google Workspace (251 checks) shipped as Cloud Run Jobs, with organization-boundary enforcement, readiness gates and coverage declaration so a partial scan can never be reported as complete.
+- **Platform & GitOps:** owns the dev → staging → production promotion path on GKE/Istio using Pulumi, Helm and ArgoCD with cosign-signed, digest-pinned images; primary reviewer on the core infrastructure repositories, enforcing SOC 2 change control with zero admin-merge bypasses. Root-caused a two-day production outage from a stale API-key rotation and shipped its P0 detector as infrastructure-as-code. More than 800 commits across 30+ repositories (Python, Go, Rust, TypeScript).
+
+A recurring thread across all of this is **reproducibility of LLM-based verdicts** — treating model variability as a research problem rather than an implementation detail — which connects directly to his academic work on mechanistic interpretability and inference-time steering.
 
 ## 🧩 **Professional Experience — Previous Roles**
 
@@ -102,7 +105,7 @@ A year-by-year view of Sumit's path:
 - **2022** — DELTA 3.0 and IT-Meet computer-vision wins.
 - **2023** — Machine learning for Tirhuta Lipi; GritFeat AI Hackathon win.
 - **2024** — AI Engineer at AMNIL; banknote-security paper published.
-- **2025** — Began AI safety and agentic-systems research at Astha.ai.
+- **2025** — Began AI security and agentic-systems research at Astha.ai; SAFE-MCP scanner and the safe-k8s compliance agent.
 - **2026** — ACL Main Conference paper, GLOW @ IJCAI, maiBERT; graduated in Computer Engineering.
 
 ## 🚀 **Major Projects — Language Technology for Maithili**

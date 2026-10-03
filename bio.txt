@@ -181,9 +181,9 @@ Interpretability-driven discovery rests on interventions: a component is credite
 
 ## 📚 **Publications — Low-Resource NLP & Maithili**
 
-### **MaiBERT: A Pre-training Corpus and Language Model for Low-Resourced Maithili Language** — LoResLM @ ACL 2026
+### **MaiBERT: A Pre-training Corpus and Language Model for Low-Resourced Maithili Language** — LoResLM @ EACL 2026
 - **Authors:** Sumit Yadav, Raju Kumar Yadav, Utsav Maskey, Gautam Siddharth Kashyap, Ganesh Gautam, Usman Naseem.
-- **Venue:** LoResLM @ ACL 2026 (pp. 444–452), Rabat, Morocco.
+- **Venue:** LoResLM @ EACL 2026 (pp. 444–452), Rabat, Morocco.
 - **TL;DR:** The first BERT for Maithili (~50M speakers), reaching 87% news-classification accuracy and beating multilingual baselines like MuRIL and NepBERTa.
 - Pre-trained with masked language modeling on a newly constructed Maithili corpus. Reaches 87.02% accuracy on news classification — outperforming regional models NepBERTa and HindiBERT with 5–7% gains across classes — and is open-sourced for downstream tasks like sentiment analysis and NER. (Earlier preprint: "Can maiBERT Speak for Maithili?")
 - [ACL Anthology](https://aclanthology.org/2026.loreslm-1.38/) · [arXiv:2509.15048](https://arxiv.org/abs/2509.15048) · [Model](https://huggingface.co/rockerritesh/maiBERT_TF)

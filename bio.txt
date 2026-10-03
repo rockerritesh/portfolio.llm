@@ -106,7 +106,7 @@ A year-by-year view of Sumit's path:
 - **2023** — Machine learning for Tirhuta Lipi; GritFeat AI Hackathon win.
 - **2024** — AI Engineer at AMNIL; banknote-security paper published.
 - **2025** — Began AI security and agentic-systems research at Astha.ai; SAFE-MCP scanner and the safe-k8s compliance agent.
-- **2026** — ACL Main Conference paper, GLOW @ IJCAI, maiBERT; graduated in Computer Engineering.
+- **2026** — ACL Main Conference paper, NeurIPS Interp4Discovery workshop paper, GLOW @ IJCAI, maiBERT; graduated in Computer Engineering.
 
 ## 🚀 **Major Projects — Language Technology for Maithili**
 
@@ -152,6 +152,15 @@ A year-by-year view of Sumit's path:
 - An open-source image-recognition-based robotic arm for touchless medical assistance (UN SDG3). **Tech:** Python, Arduino, TensorFlow. [GitHub](https://github.com/jarp0l/IRB-Robo-Arm)
 
 ## 📚 **Publications — Interpretability & AI Safety**
+
+### **Your Intervention Was Too Narrow: Mechanism Width as a Precondition for Interpretability-Driven Discovery** — Interp4Discovery @ NeurIPS 2026 (Accepted)
+
+Authors: **Sumit Yadav**, Basanta Joshi (Pulchowk Campus, IOE, Tribhuvan University).
+
+Interpretability-driven discovery rests on interventions: a component is credited with a function when perturbing it changes behaviour, and dismissed when nothing happens. This paper shows the standard intervention unit recovers only about **10% of the achievable causal effect** — 8.6% for a single attention head on GPT-2 small's IOI circuit, 9.6% for removing one decoder layer of Llama-3.1-8B, and 11.1% for rank-1 steering in DINOv2. Measuring a mechanism's **width k\*** before intervening and widening the intervention to match recovers **95–100%** of the effect (k\*_eff = 9 heads, 13 layers, 53 directions respectively). A writer-ladder cliff predicts width-1 success at ρ = 0.81. The paper gives a protocol for separating width-limited failures from readout-limited and basis-limited ones before a discovery claim is made — a null result from a too-narrow intervention is not evidence of absence.
+
+- Preprint: [paper.pdf](https://rockerritesh.github.io/width-artifacts/paper.pdf)
+- Project page: [rockerritesh.github.io/width-artifacts](https://rockerritesh.github.io/width-artifacts/)
 
 ### **SafeConstellations: Mitigating Over-Refusals in LLMs Through Task-Aware Representation Steering** — ACL 2026 (Main Conference, CORE A\*)
 - **Authors:** Utsav Maskey, Sumit Yadav, Mark Dras, Usman Naseem.

@@ -160,6 +160,7 @@ Authors: **Sumit Yadav**, Basanta Joshi (Pulchowk Campus, IOE, Tribhuvan Univers
 Interpretability-driven discovery rests on interventions: a component is credited with a function when perturbing it changes behaviour, and dismissed when nothing happens. This paper shows the standard intervention unit recovers only about **10% of the achievable causal effect** — 8.6% for a single attention head on GPT-2 small's IOI circuit, 9.6% for removing one decoder layer of Llama-3.1-8B, and 11.1% for rank-1 steering in DINOv2. Measuring a mechanism's **width k\*** before intervening and widening the intervention to match recovers **95–100%** of the effect (k\*_eff = 9 heads, 13 layers, 53 directions respectively). A writer-ladder cliff predicts width-1 success at ρ = 0.81. The paper gives a protocol for separating width-limited failures from readout-limited and basis-limited ones before a discovery claim is made — a null result from a too-narrow intervention is not evidence of absence.
 
 - Official venue page: [NeurIPS 2026 virtual](https://neurips.cc/virtual/2026/loc/atlanta/164229) (NeurIPS workshop papers are not assigned DOIs)
+- OpenReview (PDF, BibTeX, reviews): [openreview.net/forum?id=aDQHyo9kyh](https://openreview.net/forum?id=aDQHyo9kyh)
 - Preprint: [paper.pdf](https://rockerritesh.github.io/width-artifacts/paper.pdf)
 - Project page: [rockerritesh.github.io/width-artifacts](https://rockerritesh.github.io/width-artifacts/)
 

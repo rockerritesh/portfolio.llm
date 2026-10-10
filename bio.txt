@@ -204,7 +204,9 @@ Interpretability-driven discovery rests on interventions: a component is credite
 
 ## 📚 **Publications — Vision & Text Classification**
 
-### **Revolutionizing Currency Security: A YOLOv8-Based Approach for Detecting Counterfeit Nepali Banknotes** — J. Bus. Econ. Stud., 2024
+### **Revolutionizing Currency Security: A YOLOv8-Based Approach for Automated Detection of Counterfeit Nepali Banknotes** — J. Bus. Econ. Stud., 2024
+
+Authors: Santosh Giri, Loknath Regmi, **Sumit Yadav**, Binaya Basnet, Binit KC, Mohan Bhandari. Journal of Business and Econometrics Studies, 2024, 1(6): 1–8.
 - **TL;DR:** A YOLOv8 detector for counterfeit Nepali banknotes, reaching 0.986 true-positive recall on the note's back face.
 - Classifies Nepalese banknotes as genuine or counterfeit to help curb financial fraud. On 180 samples of the 1000-rupee note, YOLOv8 reaches a true-positive recall of 0.82 on the front face and 0.9863 on the back, with strong mAP — and the approach is adaptable across hardware platforms.
 - [DOI](https://doi.org/10.61440/JBES.2024.v1.47)
